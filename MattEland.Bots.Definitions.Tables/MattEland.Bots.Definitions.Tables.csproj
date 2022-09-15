@@ -6,8 +6,19 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Matt Eland</Authors>
     <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
-    <Version>0.0.1-dev</Version>
+    <Version>0.0.3-dev</Version>
+    <PackageProjectUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</RepositoryUrl>
+    <PackageIcon>AccessibleAI.png</PackageIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\AccessibleAI.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.Data.Tables" Version="12.6.1" />
