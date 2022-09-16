@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Matt Eland</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.5-dev</Version>
+    <Version>0.0.6-dev</Version>
     <PackageProjectUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</PackageProjectUrl>
     <RepositoryUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</RepositoryUrl>
     <PackageIcon>AccessibleAI.png</PackageIcon>
@@ -15,8 +15,8 @@
     <Description>Azure Table Storage helpers for Microsoft Bot Framework chatbot development</Description>
     <Company>AccessibleAI.dev</Company>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageTags>Microsoft Bot Framework; Azure Table Storage</PackageTags>
-    <PackageReleaseNotes>Reworked TableEntityRepository, added TableEntityExtensions</PackageReleaseNotes>
+    <PackageTags>Microsoft-Bot-Framework; Azure-Table-Storage</PackageTags>
+    <PackageReleaseNotes>Simplified namespace</PackageReleaseNotes>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 

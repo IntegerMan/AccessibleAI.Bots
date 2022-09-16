@@ -2,7 +2,7 @@
 using Azure;
 using Azure.Data.Tables;
 
-namespace AccessibleAI.Bots.Definitions.Tables
+namespace AccessibleAI.Bots.Tables
 {
     /// <summary>
     /// A repository for looking up information from Azure Table Storage

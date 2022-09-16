@@ -1,8 +1,6 @@
-﻿using System;
-using Azure;
-using Azure.Data.Tables;
+﻿using Azure.Data.Tables;
 
-namespace AccessibleAI.Bots.Definitions.Tables
+namespace AccessibleAI.Bots.Tables
 {
     /// <summary>
     /// Represents a definition from Azure Table Storage. This assumes that the Value and Related properties exist on the table.

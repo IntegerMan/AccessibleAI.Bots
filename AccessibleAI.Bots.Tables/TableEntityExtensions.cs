@@ -1,6 +1,6 @@
 ﻿using Azure.Data.Tables;
 
-namespace AccessibleAI.Bots.Definitions.Tables;
+namespace AccessibleAI.Bots.Tables;
 
 /// <summary>
 /// Extensions for the TableEntity class in Azure Table Storage
