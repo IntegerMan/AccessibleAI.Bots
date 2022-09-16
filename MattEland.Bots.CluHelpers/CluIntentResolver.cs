@@ -6,7 +6,7 @@ using Azure;
 using Azure.AI.Language.Conversations;
 using Azure.Core;
 
-namespace MattEland.Bots.CluHelpers
+namespace AccessibleAI.Bots.CluHelpers
 {
 
     public class CluIntentResolver

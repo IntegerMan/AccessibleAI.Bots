@@ -1,4 +1,4 @@
-﻿namespace MattEland.Bots.CluHelpers
+﻿namespace AccessibleAI.Bots.CluHelpers
 {
     public class IntentMatch
     {

@@ -1,17 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Matt Eland</Authors>
-    <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
-    <Version>0.0.3-dev</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>0.0.5-dev</Version>
     <PackageProjectUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</PackageProjectUrl>
     <RepositoryUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</RepositoryUrl>
     <PackageIcon>AccessibleAI.png</PackageIcon>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Copyright>Copyright © Matt Eland 2022</Copyright>
+    <Description>Azure Table Storage helpers for Microsoft Bot Framework chatbot development</Description>
+    <Company>AccessibleAI.dev</Company>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageTags>Microsoft Bot Framework; Azure Table Storage</PackageTags>
+    <PackageReleaseNotes>Reworked TableEntityRepository, added TableEntityExtensions</PackageReleaseNotes>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\AccessibleAI.png">
