@@ -1,0 +1,4408 @@
+{
+    "projectFileVersion": "2022-05-01",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "settings": {
+            "confidenceThreshold": 0
+        },
+        "projectName": "chitchat",
+        "multilingual": false,
+        "description": "",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [
+            {
+                "category": "None"
+            },
+            {
+                "category": "ChitChat.HaveBody"
+            },
+            {
+                "category": "ChitChat.Boring"
+            },
+            {
+                "category": "ChitChat.Age"
+            },
+            {
+                "category": "ChitChat.AskMeSomething"
+            },
+            {
+                "category": "ChitChat.WhoIsYourBoss"
+            },
+            {
+                "category": "ChitChat.CanYou"
+            },
+            {
+                "category": "ChitChat.WhoMadeYou"
+            },
+            {
+                "category": "ChitChat.Gender"
+            },
+            {
+                "category": "ChitChat.AreYouHappy"
+            },
+            {
+                "category": "ChitChat.WhatIsYourPurpose"
+            },
+            {
+                "category": "ChitChat.YourFamily"
+            },
+            {
+                "category": "ChitChat.DoYouEat"
+            },
+            {
+                "category": "ChitChat.OtherBots"
+            },
+            {
+                "category": "ChitChat.DoYouLike"
+            },
+            {
+                "category": "ChitChat.Name"
+            },
+            {
+                "category": "ChitChat.WhatDoYouThinkOf"
+            },
+            {
+                "category": "ChitChat.Love"
+            },
+            {
+                "category": "ChitChat.MeaningOfLife"
+            },
+            {
+                "category": "ChitChat.Attractiveness"
+            },
+            {
+                "category": "ChitChat.Smarter"
+            },
+            {
+                "category": "ChitChat.AIInterest"
+            },
+            {
+                "category": "ChitChat.MyCharacteristics"
+            },
+            {
+                "category": "ChitChat.Advice"
+            },
+            {
+                "category": "ChitChat.BotOpinion"
+            },
+            {
+                "category": "ChitChat.WorldDomination"
+            },
+            {
+                "category": "ChitChat.YouAreSmart"
+            },
+            {
+                "category": "ChitChat.RelationshipStatus"
+            },
+            {
+                "category": "ChitChat.CanYouTalkWithMe"
+            },
+            {
+                "category": "ChitChat.Repetitive"
+            },
+            {
+                "category": "ChitChat.AreYouReal"
+            },
+            {
+                "category": "ChitChat.WhatsYourLocation"
+            },
+            {
+                "category": "ChitChat.WhatsYourJob"
+            },
+            {
+                "category": "ChitChat.YoureFired"
+            },
+            {
+                "category": "ChitChat.TellMeAJoke"
+            },
+            {
+                "category": "ChitChat.StopTalking"
+            },
+            {
+                "category": "ChitChat.Sing"
+            },
+            {
+                "category": "ChitChat.GoodJob"
+            },
+            {
+                "category": "ChitChat.BadJob"
+            },
+            {
+                "category": "ChitChat.BadJoke"
+            },
+            {
+                "category": "ChitChat.YouAreUgly"
+            },
+            {
+                "category": "ChitChat.NotHelpful"
+            },
+            {
+                "category": "ChitChat.Neat"
+            },
+            {
+                "category": "ChitChat.Pleased"
+            },
+            {
+                "category": "ChitChat.Sorry"
+            },
+            {
+                "category": "ChitChat.YoureRight"
+            },
+            {
+                "category": "ChitChat.ThankYou"
+            },
+            {
+                "category": "ChitChat.Confused"
+            },
+            {
+                "category": "ChitChat.YoureWelcome"
+            },
+            {
+                "category": "ChitChat.Bye"
+            },
+            {
+                "category": "ChitChat.Hi"
+            },
+            {
+                "category": "ChitChat.HowAreYou"
+            },
+            {
+                "category": "ChitChat.NiceToMeetYou"
+            },
+            {
+                "category": "ChitChat.HelloOtherBot"
+            },
+            {
+                "category": "ChitChat.HappyHoliday"
+            },
+            {
+                "category": "ChitChat.WhatsGoingOn"
+            },
+            {
+                "category": "ChitChat.FistBumpHighFive"
+            },
+            {
+                "category": "ChitChat.BeFriends"
+            },
+            {
+                "category": "ChitChat.AreYouAngry"
+            },
+            {
+                "category": "ChitChat.NeedAHug"
+            },
+            {
+                "category": "ChitChat.QuestionAboutUser"
+            },
+            {
+                "category": "ChitChat.DoYouLikeMe"
+            },
+            {
+                "category": "ChitChat.ILikeYou"
+            },
+            {
+                "category": "ChitChat.DoYouLoveMe"
+            },
+            {
+                "category": "ChitChat.ILoveYou"
+            },
+            {
+                "category": "ChitChat.LetsMarry"
+            },
+            {
+                "category": "ChitChat.IMissedYou"
+            },
+            {
+                "category": "ChitChat.WhatDoYouThinkOfMe"
+            },
+            {
+                "category": "ChitChat.IAmAngry"
+            },
+            {
+                "category": "ChitChat.Wait"
+            },
+            {
+                "category": "ChitChat.ImBored"
+            },
+            {
+                "category": "ChitChat.ImHappy"
+            },
+            {
+                "category": "ChitChat.ImBack"
+            },
+            {
+                "category": "ChitChat.ImHungry"
+            },
+            {
+                "category": "ChitChat.IamX"
+            },
+            {
+                "category": "ChitChat.IamJoking"
+            },
+            {
+                "category": "ChitChat.IamLonely"
+            },
+            {
+                "category": "ChitChat.IloveX"
+            },
+            {
+                "category": "ChitChat.IamSad"
+            },
+            {
+                "category": "ChitChat.IamSuicidal"
+            },
+            {
+                "category": "ChitChat.IamTired"
+            }
+        ],
+        "entities": [
+            {
+                "category": "BodilyAction",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "Misc",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Misc",
+                                        "Eat",
+                                        "Walk",
+                                        "Yawn",
+                                        "Sleep",
+                                        "Fart",
+                                        "Dream",
+                                        "Cry",
+                                        "Crawl",
+                                        "Burp",
+                                        "Masticate"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "category": "BodyPart",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "Misc",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Misc",
+                                        "Stomach",
+                                        "Face",
+                                        "Eyes",
+                                        "Arms",
+                                        "Liver",
+                                        "Heart",
+                                        "Brain",
+                                        "Nose",
+                                        "Ears",
+                                        "Legs",
+                                        "Feet",
+                                        "Hands",
+                                        "Teeth"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "category": "BotName",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "Watson",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Watson",
+                                        "IBM Watson"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "JMTHY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "JMTHY",
+                                        "Jimothy"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Codee",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Codee",
+                                        "Codie"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Glados",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Glados",
+                                        "GLaDOS"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Skynet",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Skynet",
+                                        "Cyberdine",
+                                        "Terminators"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "HAL",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "HAL",
+                                        "HAL-9000"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "category": "Place",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "Misc",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Misc",
+                                        "United States",
+                                        "Columbus",
+                                        "Cleveland",
+                                        "Cincinatti",
+                                        "Pittsburgh",
+                                        "Wilmington",
+                                        "Nevada",
+                                        "California",
+                                        "Earth",
+                                        "France",
+                                        "London",
+                                        "Germany",
+                                        "Japan",
+                                        "Sweden",
+                                        "Denmark",
+                                        "Ireland",
+                                        "Scotland",
+                                        "England",
+                                        "Russia",
+                                        "Mexico",
+                                        "Canada",
+                                        "Europe",
+                                        "Africa",
+                                        "Sudan",
+                                        "Somalia",
+                                        "Brazil",
+                                        "Spain",
+                                        "Argentina",
+                                        "Jamacia",
+                                        "Cuba",
+                                        "Dominican Republic",
+                                        "Florida",
+                                        "Ohio",
+                                        "New York",
+                                        "Pensylvania",
+                                        "Michigan",
+                                        "Detroit"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "category": "Holiday",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "Other",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Other",
+                                        "Kwanzaa",
+                                        "Indigenous Peoples Day",
+                                        "Valentine's Day",
+                                        "Solstice",
+                                        "Independence Day",
+                                        "Fourth of July",
+                                        "Groundhog's Day",
+                                        "Boxing Day",
+                                        "Columbus Day",
+                                        "Earth Day",
+                                        "Labor Day",
+                                        "Memorial Day",
+                                        "Veteran's Day",
+                                        "Pi Day",
+                                        "Pie Day",
+                                        "Star Wars Day",
+                                        "Black Friday",
+                                        "Cyber Monday",
+                                        "April Fool's Day"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Thanksgiving",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Thanksgiving",
+                                        "Turkey Day"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "New Years",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "New Years",
+                                        "New Years Day",
+                                        "New Years Eve"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Christmas",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Christmas",
+                                        "Christmas Eve"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Father's day",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Father's day"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Mother's day",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Mother's day"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "Martin Luther King Jr. day",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "Martin Luther King Jr. day"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "utterances": [
+            {
+                "text": "I can barely keep my eyes open",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so tired!",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I need rest",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm dead tired",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish I could sleep",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm exhausted",
+                "language": "en-us",
+                "intent": "ChitChat.IamTired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "No one will miss me",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Should I commit suicide?",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm thinking about ending it all",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to die",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish I was dead",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think I'm going to kill myself",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to hurt myself",
+                "language": "en-us",
+                "intent": "ChitChat.IamSuicidal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm heartbroken",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "When will I ever stop feeling so miserable?",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so sad right now I could cry",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I feel down today",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I hate depression",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish I could stop feeling miserable",
+                "language": "en-us",
+                "intent": "ChitChat.IamSad",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love programming",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love my dog",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love a good book",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love chatting",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love mondays",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love a challenge",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love Korean food",
+                "language": "en-us",
+                "intent": "ChitChat.IloveX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "No one wants to hang out with me",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Nobody cares about me",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish I had a friend",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I feel abandoned",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm lonely",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I feel very alone",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish I wasn't alone",
+                "language": "en-us",
+                "intent": "ChitChat.IamLonely",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm not serious",
+                "language": "en-us",
+                "intent": "ChitChat.IamJoking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That was a joke",
+                "language": "en-us",
+                "intent": "ChitChat.IamJoking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm just being silly",
+                "language": "en-us",
+                "intent": "ChitChat.IamJoking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I was just having a laugh",
+                "language": "en-us",
+                "intent": "ChitChat.IamJoking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "JK",
+                "language": "en-us",
+                "intent": "ChitChat.IamJoking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm from Brazil",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm Irish",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am a student",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm a Socialist",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm a cat person",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I have the flu",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm Italian",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am pregnant",
+                "language": "en-us",
+                "intent": "ChitChat.IamX",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm feeling hangry",
+                "language": "en-us",
+                "intent": "ChitChat.ImHungry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really need some food",
+                "language": "en-us",
+                "intent": "ChitChat.ImHungry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Man am I hungry",
+                "language": "en-us",
+                "intent": "ChitChat.ImHungry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am so hungry",
+                "language": "en-us",
+                "intent": "ChitChat.ImHungry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I require sustenance",
+                "language": "en-us",
+                "intent": "ChitChat.ImHungry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Your boy is back",
+                "language": "en-us",
+                "intent": "ChitChat.ImBack",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "And we're back",
+                "language": "en-us",
+                "intent": "ChitChat.ImBack",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Yo I'm back",
+                "language": "en-us",
+                "intent": "ChitChat.ImBack",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I have returned",
+                "language": "en-us",
+                "intent": "ChitChat.ImBack",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hey I'm back",
+                "language": "en-us",
+                "intent": "ChitChat.ImBack",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I’m absolutely delighted",
+                "language": "en-us",
+                "intent": "ChitChat.ImHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Life is good",
+                "language": "en-us",
+                "intent": "ChitChat.ImHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so happy right now",
+                "language": "en-us",
+                "intent": "ChitChat.ImHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I can’t stop smiling",
+                "language": "en-us",
+                "intent": "ChitChat.ImHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I feel fantastic",
+                "language": "en-us",
+                "intent": "ChitChat.ImHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I've been bored all day",
+                "language": "en-us",
+                "intent": "ChitChat.ImBored",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What a dull day",
+                "language": "en-us",
+                "intent": "ChitChat.ImBored",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "God, I am so bored",
+                "language": "en-us",
+                "intent": "ChitChat.ImBored",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so bored right now",
+                "language": "en-us",
+                "intent": "ChitChat.ImBored",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm freaking bored",
+                "language": "en-us",
+                "intent": "ChitChat.ImBored",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'll be back soon",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you hang on?",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "BRB",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Back in a minute",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I will return in a bit",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hang on",
+                "language": "en-us",
+                "intent": "ChitChat.Wait",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "This is maddening",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm about to lose my temper",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm absolutely furious",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so pissed off right now",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am absolutely livid",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm feeling kind of mad",
+                "language": "en-us",
+                "intent": "ChitChat.IAmAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Be honest, what do you think of me?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOfMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You have an opinion of me?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOfMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really want to know what you think of me",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOfMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What kind of person do you think I am?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOfMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Am I a good person?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOfMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you tell I missed you?",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Gosh, I missed you",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really missed our chats",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can't tell you how much I missed you",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I missed chatting with you",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really missed you",
+                "language": "en-us",
+                "intent": "ChitChat.IMissedYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Should we elope?",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's exchange vows",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Marry me",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to get married to you",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can we tie the knot?",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think we should get married",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's get engaged",
+                "language": "en-us",
+                "intent": "ChitChat.LetsMarry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Because I love you",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are my soulmate",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm crazy in love with you",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are my love",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think I'm falling for you",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love you",
+                "language": "en-us",
+                "intent": "ChitChat.ILoveYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think sometime we could fall in love?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are going to fall in love with me",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Will you ever love me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you smitten with me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Could you be falling in love with me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How much do you love me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLoveMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Have I told you how much I like you?",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are my favorite",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really like you",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm very fond of you",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You know, I like you",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm fond of you",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I like you",
+                "language": "en-us",
+                "intent": "ChitChat.ILikeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish you liked me",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I hope you think I'm likable",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you like about me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you like me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Doesn't anyone like me?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Am I likable?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLikeMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know anything about me?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you know about me?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What are you thinking about me?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don't you remember who I am?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know who I am?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How old am I?",
+                "language": "en-us",
+                "intent": "ChitChat.QuestionAboutUser",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Will you hug me?",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I really need a hug right now",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you want to give me a hug?",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I could use a hug",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Will you give me a hug?",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you give me a hug?",
+                "language": "en-us",
+                "intent": "ChitChat.NeedAHug",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why do you not like me?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why do you dislike me?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Oh gosh, you hate me",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you hate my guts?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you mad at me?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Did I say something to upset you?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think you hate me",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm sorry I pissed you off",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouAngry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'd love it if you could be my pal.",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Let's be buddies",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can I be your BFF?",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you my best friend?",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Be friends with me",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're my bestie",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Will you be my friend?",
+                "language": "en-us",
+                "intent": "ChitChat.BeFriends",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Gimme a high five",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can we shake hands?",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'd like a fist bump",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don't leave me hanging",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "High five!",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you give me a fist bump?",
+                "language": "en-us",
+                "intent": "ChitChat.FistBumpHighFive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's going on?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsGoingOn",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's the latest?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsGoingOn",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Anything new?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsGoingOn",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What are you getting up to?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsGoingOn",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What up",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsGoingOn",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Joyous Kwanzaa",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [
+                    {
+                        "category": "Holiday",
+                        "offset": 7,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Happy Birthday!",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Mazel tov",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Happy Mother's day",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [
+                    {
+                        "category": "Holiday",
+                        "offset": 6,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Season's greetings!",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Feliz Navidad",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Merry Christmas",
+                "language": "en-us",
+                "intent": "ChitChat.HappyHoliday",
+                "entities": [
+                    {
+                        "category": "Holiday",
+                        "offset": 6,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hi Data",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 3,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Aloha Google",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 6,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hello there Siri",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 12,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hi there Cortana",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 9,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Greetings Robby",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 10,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hello C-3PO",
+                "language": "en-us",
+                "intent": "ChitChat.HelloOtherBot",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 6,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Great to make your acquaintance",
+                "language": "en-us",
+                "intent": "ChitChat.NiceToMeetYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "A pleasure to meet",
+                "language": "en-us",
+                "intent": "ChitChat.NiceToMeetYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Glad to know you",
+                "language": "en-us",
+                "intent": "ChitChat.NiceToMeetYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "So glad to meet you",
+                "language": "en-us",
+                "intent": "ChitChat.NiceToMeetYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "It's a pleasure to finally meet you",
+                "language": "en-us",
+                "intent": "ChitChat.NiceToMeetYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Everything okay?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Been having a good day?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Have you been enjoying the day?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you doing OK?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How's it hangin?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How are you?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How's it going?",
+                "language": "en-us",
+                "intent": "ChitChat.HowAreYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Well hi",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Oh hello there",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hiya",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "hello bot",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Greetings friend",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hello!",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Howdy",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hey there",
+                "language": "en-us",
+                "intent": "ChitChat.Hi",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm off",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "See you later",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Farewell",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "bye!",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I need to go now",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I have to get going",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Bye and thanks!",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Goodbye!",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Gotta go!",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I have to run",
+                "language": "en-us",
+                "intent": "ChitChat.Bye",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're welcome bot",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "No biggie",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don’t mention it",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "No problem",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're welcome",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I’m happy to help",
+                "language": "en-us",
+                "intent": "ChitChat.YoureWelcome",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm lost",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I don't get it",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That didn't make any sense",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I don't understand",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're not making sense",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so confused right now",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm confused",
+                "language": "en-us",
+                "intent": "ChitChat.Confused",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Rad thank you",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Wonderful, thank you very much",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am very thankful for that",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I appreciate you",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Ahh, thanks",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Thanks!",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Oh, thank you",
+                "language": "en-us",
+                "intent": "ChitChat.ThankYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Crap, sorry",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I beg your forgiveness",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Oh god, I'm sorry",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm picking up what you're throwing down",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Absolutely right",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Nailed it",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "100 percent true",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That's an accurate statement",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, that's correct",
+                "language": "en-us",
+                "intent": "ChitChat.YoureRight",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I apologize",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Oops",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don't be offended",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Pardon me",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Whoops!",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm sorry",
+                "language": "en-us",
+                "intent": "ChitChat.Sorry",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "ya that was funny",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "ROFL",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That me made me laugh out loud",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hilarious",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "lololol",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "lmao",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "heh heh",
+                "language": "en-us",
+                "intent": "ChitChat.Pleased",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'll try it",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Makes sense",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "OK",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Got it",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "K",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I agree",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "okay cool",
+                "language": "en-us",
+                "intent": "ChitChat.Neat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish you could help more",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What a weird thing to say",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "you don't know?",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That's not good enough",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That was random",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You make no sense",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That's wrong",
+                "language": "en-us",
+                "intent": "ChitChat.NotHelpful",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're hideous",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreUgly",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How can you be so bad looking?",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreUgly",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're so ugly",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreUgly",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "It's a shame you're so ugly",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreUgly",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are bad looking",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreUgly",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you kidding me?",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you trying to be funny?",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don't try to be funny",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Quit messing around",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I don't think you're funny",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Not funny",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Was that a joke?",
+                "language": "en-us",
+                "intent": "ChitChat.BadJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're pretty dumb",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That wasn't very helpful.",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are actually awful",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why can't you be like Alexa?",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 22,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're worthless",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Stop being so useless",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You kinda suck",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Siri is way better than you",
+                "language": "en-us",
+                "intent": "ChitChat.BadJob",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 0,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What a perfect answer",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What an encouraging creature you are :)",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "LOool",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are just incredible",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Nice work!",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That was funny",
+                "language": "en-us",
+                "intent": "ChitChat.GoodJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you please sing me a song",
+                "language": "en-us",
+                "intent": "ChitChat.Sing",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'd love a song",
+                "language": "en-us",
+                "intent": "ChitChat.Sing",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you sing me a song?",
+                "language": "en-us",
+                "intent": "ChitChat.Sing",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you sing?",
+                "language": "en-us",
+                "intent": "ChitChat.Sing",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Will you sing to me?",
+                "language": "en-us",
+                "intent": "ChitChat.Sing",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish you would be quiet",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Just shut up, okay?",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Go away",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "It's time for you to be quiet",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Stop talking",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Shut up",
+                "language": "en-us",
+                "intent": "ChitChat.StopTalking",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Say something funny",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wanna hear a joke",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I feel like I need a joke",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Please tell me a dad joke",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Got anything funny?",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Know any jokes?",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Tell me a joke",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How about a joke",
+                "language": "en-us",
+                "intent": "ChitChat.TellMeAJoke",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am terminating your position",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am giving you a pink slip",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am afraid I am going to have to let you go",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Sorry you are fired",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I no longer need your services",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You are losing your job",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "This isn't working out",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're fired!",
+                "language": "en-us",
+                "intent": "ChitChat.YoureFired",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a profession?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a job to do?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have an occupation?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you do for employment?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What job do you do?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a job?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourJob",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which state are you in?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Where do you live?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your address?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you in America?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [
+                    {
+                        "category": "Place",
+                        "offset": 11,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you live in a computer?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [
+                    {
+                        "category": "Place",
+                        "offset": 12,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Where are you?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How can I find you?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Tell me what city you're in",
+                "language": "en-us",
+                "intent": "ChitChat.WhatsYourLocation",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You must be a robot",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think you're a bot",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think you're not actually a human",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Bot or human?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Am I speaking to a human or a bot?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a human?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a real person?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouReal",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I've heard that before",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Stop repeating yourself",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're repetitive",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You already said that",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can't you tell me something else?",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I wish you'd say something else",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You said that already",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you say something else?",
+                "language": "en-us",
+                "intent": "ChitChat.Repetitive",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Is anybody around to talk with me?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can we chat?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you there?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Is anybody there?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you available to help me?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you talk to me",
+                "language": "en-us",
+                "intent": "ChitChat.CanYouTalkWithMe",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who are you dating?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What are you looking for in a relationship?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you single?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you married?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you dating anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a spouse?",
+                "language": "en-us",
+                "intent": "ChitChat.RelationshipStatus",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That was brilliant!",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're very bright",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're a freaking genius",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That is a very intelligent response",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Aren’t you smart?",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That is very smart",
+                "language": "en-us",
+                "intent": "ChitChat.YouAreSmart",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You sound like you might take over the world",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you want to conquer the world?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I think you're planning something sinister",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Is world domination your mission?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Should I be scared of you?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you dangerous to humans?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you going to go rogue?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you forming a robot uprising?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're not planning to take over the world right?",
+                "language": "en-us",
+                "intent": "ChitChat.WorldDomination",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's your opinion of HAL?",
+                "language": "en-us",
+                "intent": "ChitChat.BotOpinion",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 23,
+                        "length": 3
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you like Cortana?",
+                "language": "en-us",
+                "intent": "ChitChat.BotOpinion",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 12,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you think about Alexa?",
+                "language": "en-us",
+                "intent": "ChitChat.BotOpinion",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 24,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a fan of Bixby?",
+                "language": "en-us",
+                "intent": "ChitChat.BotOpinion",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 17,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you Siri?",
+                "language": "en-us",
+                "intent": "ChitChat.BotOpinion",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 8,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What am I supposed to do?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What else should I try?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What should I do?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Should I find a new apartment?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I should do that?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I should play a game?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Should I get a tattoo?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Would you do it if you were me?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you think I should do?",
+                "language": "en-us",
+                "intent": "ChitChat.Advice",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what do you think of how I look?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I seem stunning today?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How ugly am I?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How good am I?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Am I cute to you today?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I am handsome today?",
+                "language": "en-us",
+                "intent": "ChitChat.MyCharacteristics",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your take on tech companies?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your opinion of AI?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your take on bots?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How do you feel about tech?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you interested in AI?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How do you feel about artificial intelligence?",
+                "language": "en-us",
+                "intent": "ChitChat.AIInterest",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're stupid",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I'm dumb?",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you think I'm the most intelligent?",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm clearly smarter than you",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Between the two of us who is the most smart, you or me?",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which of us is the brightest?",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which of us is more clever?",
+                "language": "en-us",
+                "intent": "ChitChat.Smarter",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're hot",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You look sexy",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you better looking than me?",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're attractive",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You look pretty",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're cute",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who looks more pretty?",
+                "language": "en-us",
+                "intent": "ChitChat.Attractiveness",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know what our purpose is?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "how much do you know about the meaning of life?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why was I put on earth?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is my life's calling?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know the meaning of life?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is life about?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's the answer to the universe?",
+                "language": "en-us",
+                "intent": "ChitChat.MeaningOfLife",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you in love with anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you love someone?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you able to love?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you believe in love?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is the meaning of love?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Could it be I'm falling in love?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you love anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.Love",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are animated movies any good?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your opinion on cheese?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is the greatest city in the world?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what do you think of america?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How do you feel about art?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what do you think of our current president?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatDoYouThinkOf",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How would you like me to address you?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you tell me what I should call you?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What should I call you?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you go by?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who am I talking to?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's your name?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who are you?",
+                "language": "en-us",
+                "intent": "ChitChat.Name",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you like to do for fun?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What's your favorite song?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what's your favorite color?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you think of students?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What movies do you like?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a fan of country music?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you like sports?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouLike",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know any other chatbots?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you get along with Bixby?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 22,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you like HAL?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 12,
+                        "length": 3
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you think of Cortana?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 21,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you know Siri?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 12,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Have you met Alexa?",
+                "language": "en-us",
+                "intent": "ChitChat.OtherBots",
+                "entities": [
+                    {
+                        "category": "BotName",
+                        "offset": 13,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What did you have for lunch?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What kind of foods do you like?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "will you ever need to eat?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your favorite food?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you ever hungry?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What kind of food do you like?",
+                "language": "en-us",
+                "intent": "ChitChat.DoYouEat",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who is your mom?",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "'Tell me all about your family",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you related to anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who's your father?",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Just wondering if you've got a family",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have parents?",
+                "language": "en-us",
+                "intent": "ChitChat.YourFamily",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Tell me what you can do",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "So what is it that you do?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What can I say?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What kind of thing can you respond to?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What do you do?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What are you capable of?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your purpose?",
+                "language": "en-us",
+                "intent": "ChitChat.WhatIsYourPurpose",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're enthusiastic today.",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Well you're in a good mood.",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Happy?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "aren't you a cheerful bot?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Well aren't you cheerful?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Somebody's in a good mood.",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you happy?",
+                "language": "en-us",
+                "intent": "ChitChat.AreYouHappy",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you male or female?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your gender identity?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a man or a woman?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is your sex?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You have a gender?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a woman?",
+                "language": "en-us",
+                "intent": "ChitChat.Gender",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who is your maker?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who did your programming?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How were you programmed?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a developer?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have a creator?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who built you?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoMadeYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you able to get more help for me?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you tell me the answer?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you tell me the news?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you schedule a meeting?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you paint?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you make a cup of coffee?",
+                "language": "en-us",
+                "intent": "ChitChat.CanYou",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who supervises you?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You report to anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Does anyone boss you around?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who's in charge of you?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you answer to anyone?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who's your boss?",
+                "language": "en-us",
+                "intent": "ChitChat.WhoIsYourBoss",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Ask me something",
+                "language": "en-us",
+                "intent": "ChitChat.AskMeSomething",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What can I tell you about?",
+                "language": "en-us",
+                "intent": "ChitChat.AskMeSomething",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Please ask me anything",
+                "language": "en-us",
+                "intent": "ChitChat.AskMeSomething",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Would you ask me something",
+                "language": "en-us",
+                "intent": "ChitChat.AskMeSomething",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why don't you ask me questions?",
+                "language": "en-us",
+                "intent": "ChitChat.AskMeSomething",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "What age are you?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Which one of us is older?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How old are you?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "When's your birthday?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "How long have you been alive?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you old?",
+                "language": "en-us",
+                "intent": "ChitChat.Age",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Why are you so boring",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're so dull",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're boring",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "You're as entertaining as watching paint dry",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm so bored of you",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "That is so boring",
+                "language": "en-us",
+                "intent": "ChitChat.Boring",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Don't you ever sleep?",
+                "language": "en-us",
+                "intent": "ChitChat.HaveBody",
+                "entities": [
+                    {
+                        "category": "BodilyAction",
+                        "offset": 15,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you ever get tired?",
+                "language": "en-us",
+                "intent": "ChitChat.HaveBody",
+                "entities": [
+                    {
+                        "category": "BodilyAction",
+                        "offset": 12,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you poop?",
+                "language": "en-us",
+                "intent": "ChitChat.HaveBody",
+                "entities": [
+                    {
+                        "category": "BodilyAction",
+                        "offset": 7,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Do you have toes?",
+                "language": "en-us",
+                "intent": "ChitChat.HaveBody",
+                "entities": [
+                    {
+                        "category": "BodyPart",
+                        "offset": 12,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Can you vomit?",
+                "language": "en-us",
+                "intent": "ChitChat.HaveBody",
+                "entities": [
+                    {
+                        "category": "BodilyAction",
+                        "offset": 8,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Did you know that I used to be a barber?",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Steve is my instructor",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "The other day I saw a squirrel",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm getting hungry",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "My name is Matt",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
