@@ -1,11 +1,11 @@
-﻿using System.Text.Json;
-using Microsoft.VisualBasic.FileIO;
+﻿using Microsoft.VisualBasic.FileIO;
+using Newtonsoft.Json;
 
 namespace ChitChatToCluJsonConverter;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static void Main()
     {
         string csvFile = @"chitchat.tsv";
         TextFieldParser parser = new(csvFile);
@@ -20,7 +20,7 @@ public class Program
         Console.WriteLine("Transforming Input");
         IntentImport import = new();
 
-        // TODO: Move the intents into the import object
+        // TODO: Move the Intents into the import object
 
         foreach (KeyValuePair<string, List<string>> intent in intents)
         {
@@ -33,14 +33,22 @@ public class Program
         }
 
         Console.WriteLine("Writing Output");
-        string json = JsonSerializer.Serialize(import, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText("chitchat.json", json);
+        JsonSerializer serializer = new();
+
+        using (StreamWriter sw = new("chitchat.json"))
+        using (JsonWriter writer = new JsonTextWriter(sw))
+        {
+            writer.Formatting = Formatting.Indented;
+
+            serializer.Serialize(writer, import);
+        }
 
         Console.WriteLine("Export complete");
     }
 
     private static Dictionary<string, List<string>> BuildIntentLists(TextFieldParser parser)
     {
+        HashSet<string> utterances = new();
         Dictionary<string, List<string>> intents = new();
 
         while (!parser.EndOfData)
@@ -48,6 +56,14 @@ public class Program
             string[] row = parser.ReadFields()!;
 
             string utterance = row[0];
+
+            // Some of the chit chat stuff actually has duplicates, which CLU import doesn't like, so enforce uniqueness
+            if (utterances.Contains(utterance))
+            {
+                continue;
+            }
+            utterances.Add(utterance);
+
             string intent = row[1];
 
             if (!intents.ContainsKey(intent))

@@ -1,4 +1,6 @@
-﻿namespace ChitChatToCluJsonConverter;
+﻿using Newtonsoft.Json;
+
+namespace ChitChatToCluJsonConverter;
 
 public class UtteranceAsset
 {
@@ -13,9 +15,18 @@ public class UtteranceAsset
         Intent = intent;
     }
 
+    [JsonProperty("text")]
     public string Text { get; set; }
+    
+    [JsonProperty("language")]
     public string Language { get; set; } = "en-us";
+
+    [JsonProperty("intent")]
     public string Intent { get; set; } = "None";
+
+    [JsonProperty("entities")]
     public List<EntityAsset> Entities { get; set; } = new();
+
+    [JsonProperty("dataset")]
     public string Dataset { get; set; } = "Train";
 }

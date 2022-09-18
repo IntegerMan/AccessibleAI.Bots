@@ -1,4 +1,6 @@
-﻿namespace ChitChatToCluJsonConverter;
+﻿using Newtonsoft.Json;
+
+namespace ChitChatToCluJsonConverter;
 
 public class IntentAsset
 {
@@ -7,5 +9,6 @@ public class IntentAsset
         Category = category;
     }
 
+    [JsonProperty("category")]
     public string Category { get; set; }
 }
