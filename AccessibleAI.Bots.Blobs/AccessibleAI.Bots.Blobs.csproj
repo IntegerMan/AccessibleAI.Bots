@@ -7,9 +7,8 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Authors>Matt Eland</Authors>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <Version>0.0.1-dev</Version>
-	  <PackageProjectUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</RepositoryUrl>
+	  <Version>0.0.7-dev</Version>
+	  <RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageIcon>AccessibleAI.png</PackageIcon>
 	  <Copyright>Copyright © Matt Eland 2022</Copyright>
