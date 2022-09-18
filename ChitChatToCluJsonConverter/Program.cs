@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.FileIO;
+﻿using System.Text.Json;
+using Microsoft.VisualBasic.FileIO;
 
 namespace ChitChatToCluJsonConverter;
 
@@ -10,6 +11,37 @@ public class Program
         TextFieldParser parser = new(csvFile);
         parser.TextFieldType = FieldType.Delimited;
         parser.SetDelimiters("\t");
+        parser.ReadFields(); // Skip the header row
+
+        Console.WriteLine("Reading Input");
+        Dictionary<string, List<string>> intents = BuildIntentLists(parser);
+
+
+        Console.WriteLine("Transforming Input");
+        IntentImport import = new();
+
+        // TODO: Move the intents into the import object
+
+        foreach (KeyValuePair<string, List<string>> intent in intents)
+        {
+            import.Assets.Intents.Add(new IntentAsset(intent.Key));
+
+            foreach (string utterance in intent.Value)
+            {
+                import.Assets.Utterances.Add(new UtteranceAsset(utterance, intent.Key));
+            }
+        }
+
+        Console.WriteLine("Writing Output");
+        string json = JsonSerializer.Serialize(import, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText("chitchat.json", json);
+
+        Console.WriteLine("Export complete");
+    }
+
+    private static Dictionary<string, List<string>> BuildIntentLists(TextFieldParser parser)
+    {
+        Dictionary<string, List<string>> intents = new();
 
         while (!parser.EndOfData)
         {
@@ -18,9 +50,14 @@ public class Program
             string utterance = row[0];
             string intent = row[1];
 
-            Console.WriteLine($"{intent}: {utterance}");
+            if (!intents.ContainsKey(intent))
+            {
+                intents.Add(intent, new List<string>());
+            }
+
+            intents[intent].Add(utterance);
         }
 
-        // TODO: Write the JSON file
+        return intents;
     }
 }
