@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.1</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <LangVersion>latest</LangVersion>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Authors>Matt Eland</Authors>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <Version>0.0.1-dev</Version>
+	  <PackageProjectUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/IntegerMan/MattEland.Bots.Helpers</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageIcon>AccessibleAI.png</PackageIcon>
+	  <Copyright>Copyright © Matt Eland 2022</Copyright>
+	  <Description>Helpers for interacting with Azure Blob Storage while performing bot development</Description>
+	  <Company>AccessibleAI.dev</Company>
+	  <PackageReadmeFile>Readme.md</PackageReadmeFile>
+	  <PackageTags>Microsoft-Bot-Framework; Azure-Blob-Storage; Azure-Storage</PackageTags>
+	  <PackageReleaseNotes>Initial version</PackageReleaseNotes>
+
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="Readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\AccessibleAI.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.17.2" />
+  </ItemGroup>
+
+</Project>

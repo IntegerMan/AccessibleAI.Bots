@@ -4367,41 +4367,6 @@
                     }
                 ],
                 "dataset": "Train"
-            },
-            {
-                "text": "Did you know that I used to be a barber?",
-                "language": "en-us",
-                "intent": "None",
-                "entities": [],
-                "dataset": "Train"
-            },
-            {
-                "text": "Steve is my instructor",
-                "language": "en-us",
-                "intent": "None",
-                "entities": [],
-                "dataset": "Train"
-            },
-            {
-                "text": "The other day I saw a squirrel",
-                "language": "en-us",
-                "intent": "None",
-                "entities": [],
-                "dataset": "Train"
-            },
-            {
-                "text": "I'm getting hungry",
-                "language": "en-us",
-                "intent": "None",
-                "entities": [],
-                "dataset": "Train"
-            },
-            {
-                "text": "My name is Matt",
-                "language": "en-us",
-                "intent": "None",
-                "entities": [],
-                "dataset": "Train"
             }
         ]
     }
