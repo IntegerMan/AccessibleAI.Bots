@@ -1,6 +1,6 @@
 # AccessibleAI Bot Project
 
-The [AccessibleAI](https://AccessibleAI.dev) bot projects is a collection of *opinionated* utility projects designed to boost the speed of developing and prototyping new bots for those comfortable with .NET development.
+The [AccessibleAI Bot Project](https://AccessibleAI.dev/botproject) is a collection of *opinionated* utility projects designed to boost the speed of developing and prototyping new bots for those comfortable with .NET development.
 
 This project is currently early in development and is expanding and iterating rapidly as it is used to build several bots. 
 
