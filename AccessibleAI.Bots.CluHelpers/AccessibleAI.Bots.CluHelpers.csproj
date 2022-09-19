@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\AccessibleAI.png">
+		<None Include="..\Images\AccessibleAI.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>

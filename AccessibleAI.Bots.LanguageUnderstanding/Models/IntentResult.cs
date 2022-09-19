@@ -1,4 +1,7 @@
-﻿namespace AccessibleAI.Bots.LanguageUnderstanding.Models
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace AccessibleAI.Bots.LanguageUnderstanding.Models
 {
     /// <summary>
     /// Represents the result of trying to resolve an utterance via CLU or Orchestration.

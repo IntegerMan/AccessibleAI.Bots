@@ -2,7 +2,7 @@
 {
     public class IntentMatch
     {
-        public string Category { get; init; } = null!;
+        public string Category { get; set; } = null!;
         public double ConfidenceScore { get; set; }
     }
 }

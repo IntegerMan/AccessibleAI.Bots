@@ -2,11 +2,11 @@
 {
     public class EntityMatch
     {
-        public string Category { get; init; } = null!;
-        public string Text { get; init; } = null!;
-        public int Offset { get; init; }
-        public int Length { get; init; }
-        public double ConfidenceScore { get; init; }
+        public string Category { get; set; } = null!;
+        public string Text { get; set; } = null!;
+        public int Offset { get; set; }
+        public int Length { get; set; }
+        public double ConfidenceScore { get; set; }
         public string? ListKey { get; set; }
     }
 }

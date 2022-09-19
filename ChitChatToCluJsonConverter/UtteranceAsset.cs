@@ -16,8 +16,8 @@ public class UtteranceAsset
     }
 
     [JsonProperty("text")]
-    public string Text { get; set; }
-    
+    public string Text { get; set; } = null!;
+
     [JsonProperty("language")]
     public string Language { get; set; } = "en-us";
 
