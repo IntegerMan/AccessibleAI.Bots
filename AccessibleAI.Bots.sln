@@ -12,9 +12,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.CluHelper
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Tables", "AccessibleAI.Bots.Tables\AccessibleAI.Bots.Tables.csproj", "{C00E778B-05FD-4042-905A-59C61F2D8FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibleAI.Bots.Blobs", "AccessibleAI.Bots.Blobs\AccessibleAI.Bots.Blobs.csproj", "{7A44A5B1-4697-49F3-89CB-B824C8FC4CCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Blobs", "AccessibleAI.Bots.Blobs\AccessibleAI.Bots.Blobs.csproj", "{7A44A5B1-4697-49F3-89CB-B824C8FC4CCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChitChatToCluJsonConverter", "ChitChatToCluJsonConverter\ChitChatToCluJsonConverter.csproj", "{AABC99BF-ACD7-4371-9D85-933608CD8A3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChitChatToCluJsonConverter", "ChitChatToCluJsonConverter\ChitChatToCluJsonConverter.csproj", "{AABC99BF-ACD7-4371-9D85-933608CD8A3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.LanguageUnderstanding", "AccessibleAI.Bots.LanguageUnderstanding\AccessibleAI.Bots.LanguageUnderstanding.csproj", "{DCF2005A-0749-4C80-BA53-DB6A24D5A318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
