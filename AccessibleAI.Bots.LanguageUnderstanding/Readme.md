@@ -1,6 +1,8 @@
-# AccessibleAI.Bots.CluHelpers
+# AccessibleAI.Bots.LanguageUnderstanding
 
-The CLU Helpers project is designed to make interacting with Conversational Language Understanding (CLU) easier while the new version of the .NET SDK is still in development.
+The CLU Helpers project is designed to make interacting with Conversational Language Understanding (CLU) and Orchestration easier while the new version of the .NET SDK is still in development.
+
+This package also includes logic for working with CLU-based chit-chat libraries in an object-oriented manner.
 
 ## CluIntentResolver
 
@@ -36,3 +38,11 @@ switch (cluResult.TopIntent)
 		break;
 }
 ```
+
+## OrchestrationIntentResolver
+
+TODO: This class is currently undocumented, but behaves similarly to CluIntentResolver.
+
+## ChitChatHandlerBase
+
+TODO: This class is currently early in development and is undocumented as a result

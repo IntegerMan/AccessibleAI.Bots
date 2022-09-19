@@ -12,7 +12,7 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
 		<Copyright>Copyright © Matt Eland 2022</Copyright>
-		<Description>Helpers for working with Conversational Language Understanding (CLU) for Microsoft Bot Framework bot development</Description>
+		<Description>Helpers for working with Conversational Language Understanding (CLU), Orchestration, and Chit Chat for Microsoft Bot Framework bot development</Description>
 		<Company>AccessibleAI.dev</Company>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<PackageTags>Microsoft-Bot-Framework; Azure-Cognitive-Services; CLU</PackageTags>
