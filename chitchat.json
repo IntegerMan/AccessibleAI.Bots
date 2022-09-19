@@ -123,7 +123,7 @@
         "category": "ChitChat.TellAnotherJoke"
       },
       {
-        "category": "Well, ChitChat.TellAJoke"
+        "category": "ChitChat.BeFunny"
       },
       {
         "category": "ChitChat.BeQuiet"
@@ -259,9 +259,6 @@
       },
       {
         "category": "ChitChat.ImHungry"
-      },
-      {
-        "category": "ChitChat.IamRandom"
       },
       {
         "category": "ChitChat.IamJoking"
@@ -30176,518 +30173,518 @@
       {
         "text": "Will you say something funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do a silly thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something amusing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something dumb",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you be silly",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something kooky",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something off the wall",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you tell me something funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something ridiculous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something stupid",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something dumb",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something kooky",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something off the wall",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I want you to tell me something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something silly",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Come on, say something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something that will make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do something wacky",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Entertain me",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Give me a good chuckle",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "How would you make me laugh?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I want something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Amuse me",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Amuse me with something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Be funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Be funny right now",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Be ridiculous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Be silly",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Be silly for me",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you be a silly billy?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do a ridiculous thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you be ridiculous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Do a funny thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you do something funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you say something funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you say something ridiculous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you say something silly",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "It's time to make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Can you be funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Tell me something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Tell me something off the wall",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Try to make me belly laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Try to make me laugh",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "What can you say that will make me laugh?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you be funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I want to hear something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you do something funny?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something that will crack me up",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you say something ridiculous?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you say something silly?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Won't you do something amusing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Won't you do something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Won't you do something silly?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Won't you say something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Will you be silly?",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something funny",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Make me laugh out loud",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Please make me giggle",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say a dumb saying",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say a funny saying",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say a funny thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say a ridiculous thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Tell me something dumb",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something wacky",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something humorous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something ridiculous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something silly",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say something stupid",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Won't you say something humorous",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "Say a silly thing",
         "language": "en-us",
-        "intent": "Well, ChitChat.TellAJoke",
+        "intent": "ChitChat.BeFunny",
         "entities": [],
         "dataset": "Train"
       },
@@ -39057,7 +39054,7 @@
         "dataset": "Train"
       },
       {
-        "text": "ChitChat.IamRandom",
+        "text": "None",
         "language": "en-us",
         "intent": "ChitChat.MiscPositive",
         "entities": [],
@@ -57273,2044 +57270,2044 @@
       {
         "text": "I'm a Socialist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a soccer fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am underweight",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Libertarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a journalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a child",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an educator",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a pagan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Italian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am on a boat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am engaged",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am lazy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am liberal",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am married",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Mexican",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am middle-aged",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Latina",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am old",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Korean",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am on a business trip",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am on the road",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am overweight",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am pregnant",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am religious",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Russian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am self-employed",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Native American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am in Seattle",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Ethiopian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am fat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am French",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am German",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am handsome",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Latino",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am in a relationship",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am shy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am in the city",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am in the country",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Indian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Irish",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Italian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Japanese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Jewish",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Hispanic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a boxer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have the flu",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Baby Boomer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a bartender",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a baseball fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a basketball fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Bernie supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am sexy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a blogger",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have brothers",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a boy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a bro",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Buddhist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Capitalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a carnivore",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a cat person",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a bartender",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Biden supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am white",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am doing that",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am sick",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am single",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am skinny",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am strong",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am tall",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have sisters",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am weak",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have duel citizenship",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am young",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have a big family",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have a brother",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have a cold",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have a fever",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I have a sister",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am short",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Vietnamese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a muslim",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am English",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Hoosier",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a lawyer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a liberal",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a game designer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a librarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Democrat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a pagan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Pisces",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Republican",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a salesman",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a scientist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a soccer fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Socialist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Libra",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a chef",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a baseball fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a basketball fan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Bernie supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Biden supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a blogger",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Buddhist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a hindu",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a carnivore",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a teacher",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a child of god",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Christian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Communist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a conservative",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a cook",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a cop",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a CPA",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Capitalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am bipolar",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an engineer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an extrovert",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an immigrant",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an Independent",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an introvert",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an only child",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a student",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am bald",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an artist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am black",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Canadian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am Chinese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am competitive",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am conservative",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am cute",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am divorced",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am athletic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a writer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a child of god",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a tech journalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a tech worker",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a teenager",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Trump supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a vegan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a vegetarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an educator",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Warren supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an atheist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am African American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an activist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an agnostic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an Aquarius",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am an Aries",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Taurus",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I am a Virgo",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm in a relationship",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm black",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Gen Y",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Gen Z",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm German",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm going to do that",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm handsome",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm gangsta",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Hispanic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm from there",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm in Seattle",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm in the city",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm in the country",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Indian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Irish",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Japanese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm hindu",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm cute",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a chef",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm blonde",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm brunette",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Canadian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Chinese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm competitive",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm gay",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm currently travelling",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Latina",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm divorced",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm doing that",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm engaged",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm English",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Ethiopian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm fat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm French",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm conservative",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm the king",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm short",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm shy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm sick",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm single",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm skinny",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm strong",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Jewish",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm the best",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Russian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm the queen",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm thick",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm underweight",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Vietnamese",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm weak",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm white",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm young",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm tall",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm old",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm bisexual",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Latino",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm lazy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm liberal",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm married",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Mexican",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm middle-aged",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm sexy",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Native American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm self-employed",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm on a boat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm on a business trip",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm on the road",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm overweight",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm pregnant",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm religious",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm Korean",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm muslim",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Pisces",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm blond",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a liberal",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Libertarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Libra",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a librarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a man",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a journalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Hoosier",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a redhead",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Republican",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a robot",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a salesman",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a scientist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a millennial",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a diver",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Christian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Communist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a conservative",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a cook",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a cop",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a CPA",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a lawyer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a dime",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Taurus",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a dog person",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a fighter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a game designer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a gangster",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a genius",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a girl",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a golfer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Democrat",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an immigrant",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an Aquarius",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an Aries",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an artist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an astronaut",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an atheist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a student",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an extrovert",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an activist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an Independent",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an introvert",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an only child",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm athletic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm awesome",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm bald",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm bipolar",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an engineer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Warren supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Leo",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a teacher",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a tech journalist",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a tech worker",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a teenager",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Trump supporter",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a vegan",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an alien",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a Virgo",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm an adult",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a woman",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a writer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm African American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm agnostic",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm amazing",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm American",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a swimmer",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },
       {
         "text": "I'm a vegetarian",
         "language": "en-us",
-        "intent": "ChitChat.IamRandom",
+        "intent": "None",
         "entities": [],
         "dataset": "Train"
       },

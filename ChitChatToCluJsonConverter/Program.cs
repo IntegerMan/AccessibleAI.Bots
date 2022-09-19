@@ -20,12 +20,15 @@ public class Program
         Console.WriteLine("Transforming Input");
         IntentImport import = new();
 
-        // TODO: Move the Intents into the import object
-
         foreach (KeyValuePair<string, List<string>> intent in intents)
         {
-            import.Assets.Intents.Add(new IntentAsset(intent.Key));
+            // Add the intent name, keeping in mind that None may be present in the list already and shouldn't be duplicated
+            if (import.Assets.Intents.All(i => i.Category != intent.Key))
+            {
+                import.Assets.Intents.Add(new IntentAsset(intent.Key));
+            }
 
+            // Add all utterances
             foreach (string utterance in intent.Value)
             {
                 import.Assets.Utterances.Add(new UtteranceAsset(utterance, intent.Key));
