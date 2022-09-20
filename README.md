@@ -8,7 +8,7 @@ This project is currently early in development and is expanding and iterating ra
 
 The vision for the Accessible AI Bot Project is to provide a variety of capabilities that can be added to any bot developed using v4 of the Microsoft Bot Framework SDK.
 
-However, the library's implementation is somewhat opinionated in how classes and objects are structured in order to provide the best experience for people familiar with object-oriented programming in .NET.
+The Accessible AI Bot Project is moderately opinionated in how classes and objects are structured in order to provide the best experience for people familiar with object-oriented programming in .NET but new to bot development.
 
 The libraries are going to have the most immediate applicability for people building bots oriented around searching and presenting content and helping users find what they're looking for, simply because these are the types of bots it is being used to build right now.
 
@@ -16,10 +16,10 @@ The libraries are going to have the most immediate applicability for people buil
 
 Presently there are four key pieces of the AccessibleAI Bots Project:
 
-- [AccessibleAI.Bots.Core](./AccessibleAI.Bots.Core/Readme.md) - contains common definitions and helpers. This contains the methods for easy card creation on responses.
-- [AccessibleAI.Bots.LanguageUnderstanding](./AccessibleAI.Bots.LanguageUnderstanding/Readme.md) - makes it easier to call the new conversational language understanding and orchestration endpoints. Also includes helpers for ChitChat logic.
-- [AccessibleAI.Bots.Tables](./AccessibleAI.Bots.Tables/Readme.md) - stores frequent responses to user queries in tabular form
-- [AccessibleAI.Bots.Blobs](./AccessibleAI.Bots.Blobs/Readme.md) - used to store easy-to-read transcripts for diagnostic purposes
+- [AccessibleAI.Bots.Core](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Core) - contains common definitions and helpers. This contains the methods for easy card creation on responses.
+- [AccessibleAI.Bots.LanguageUnderstanding](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.LanguageUnderstanding) - makes it easier to call the new conversational language understanding and orchestration endpoints. Also includes helpers for ChitChat logic.
+- [AccessibleAI.Bots.Tables](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Tables) - stores frequent responses to user queries in tabular form
+- [AccessibleAI.Bots.Blobs](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Blobs) - used to store easy-to-read transcripts for diagnostic purposes
 
 All packages will be made available on NuGet as pre-release packages.
 
