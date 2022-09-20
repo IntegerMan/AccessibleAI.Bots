@@ -11,16 +11,22 @@ namespace AccessibleAI.Bots.LanguageUnderstanding.Models
         private readonly Dictionary<string, EntityMatch> _entities = new();
         private readonly List<IntentMatch> _intents = new();
 
+        public LanguageResult(string intentName = "None", string orchestrationIntentName = "None")
+        {
+            OrchestrationIntentName = orchestrationIntentName;
+            IntentName = intentName;
+        }
+
         /// <summary>
         /// Gets or sets the intent name used for resolving orchestration intents.
         /// This will be None if an orchestration flow was not used.
         /// </summary>
-        public string OrchestrationIntentName { get; set; } = "None";
+        public string OrchestrationIntentName { get; set; }
 
         /// <summary>
         /// Gets or sets the intent name of the matching intent. This will not include the orchestration name, if one was present.
         /// </summary>
-        public string IntentName { get; set; } = "None";
+        public string IntentName { get; set; }
         
         /// <summary>
         /// Gets the confidence score for the given low-level intent.
@@ -33,6 +39,9 @@ namespace AccessibleAI.Bots.LanguageUnderstanding.Models
         public IntentMatch? TopIntent => _intents.FirstOrDefault(i => i.Category == IntentName);
 
         public IEnumerable<EntityMatch> Entities => _entities.Values.OrderBy(e => e.Category);
+        
+        
+        public static LanguageResult NoneIntent { get; } = new("None", "None");
 
         /// <summary>
         /// Adds an entity to the result

@@ -4,7 +4,11 @@ The CLU Helpers project is designed to make interacting with Conversational Lang
 
 This package also includes logic for working with CLU-based chit-chat libraries in an object-oriented manner.
 
-## CluIntentResolver
+## Intent Resolvers
+
+`IIntentResolver`s map an utterance string to a `LanguageResult` for that utterance.
+
+### CluIntentResolver
 
 The `CluIntentResolver` class allows you to match an intent with its entities from an utterance using Conversational Language Understanding (CLU).
 
@@ -39,15 +43,22 @@ switch (cluResult.TopIntent)
 }
 ```
 
-## OrchestrationIntentResolver
+### OrchestrationIntentResolver
 
 TODO: This class is currently undocumented, but behaves similarly to CluIntentResolver.
 
-## LayeredOrchestrationIntentResolver
+### LayeredOrchestrationIntentResolver
 
 This class is an `IIntentResolver` that allows you to use multiple `IIntentResolver`s to resolve intents in a prioritized order. 
 This can help with class imbalances between CLU projects or can help prioritize one layer over another.
 
-## ChitChatHandlerBase
+### PooledOrchestrationIntentResolver
+
+This is a multiple `IIntentResolver` that pools the results of multiple `IIntentResolver`s and returns the most common intent, with 
+optional weighting by layer priority. Under this model all layers will be asked for their opinion and the highest confidence wins.
+
+## Conversation
+
+### ChitChatHandlerBase
 
 TODO: This class is currently early in development and is undocumented as a result
