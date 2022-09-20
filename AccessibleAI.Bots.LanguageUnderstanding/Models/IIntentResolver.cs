@@ -2,5 +2,5 @@
 
 public interface IIntentResolver
 {
-    LanguageResult FindIntent(string utterance);
+    LanguageResult? FindIntent(string utterance);
 }
