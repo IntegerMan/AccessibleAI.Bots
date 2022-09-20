@@ -1,4 +1,4 @@
-﻿namespace AccessibleAI.Bots.LanguageUnderstanding.Models;
+﻿namespace AccessibleAI.Bots.Core.Language;
 
 public interface IIntentResolver
 {

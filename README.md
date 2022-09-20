@@ -14,13 +14,14 @@ The libraries are going to have the most immediate applicability for people buil
 
 ## Packages
 
-Presently there are three key pieces of the AccessibleAI Bots Project:
+Presently there are four key pieces of the AccessibleAI Bots Project:
 
+- [AccessibleAI.Bots.Core](./AccessibleAI.Bots.Core/Readme.md) - contains common definitions and helpers. This contains the methods for easy card creation on responses.
 - [AccessibleAI.Bots.LanguageUnderstanding](./AccessibleAI.Bots.LanguageUnderstanding/Readme.md) - makes it easier to call the new conversational language understanding and orchestration endpoints. Also includes helpers for ChitChat logic.
 - [AccessibleAI.Bots.Tables](./AccessibleAI.Bots.Tables/Readme.md) - stores frequent responses to user queries in tabular form
 - [AccessibleAI.Bots.Blobs](./AccessibleAI.Bots.Blobs/Readme.md) - used to store easy-to-read transcripts for diagnostic purposes
 
-All packages will be made available both on GitHub and via NuGet, though packages may be marked as pre-release on NuGet for the time being.
+All packages will be made available on NuGet as pre-release packages.
 
 ## Status
 
