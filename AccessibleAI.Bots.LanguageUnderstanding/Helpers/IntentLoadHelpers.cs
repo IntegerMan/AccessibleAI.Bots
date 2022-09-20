@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using AccessibleAI.Bots.LanguageUnderstanding.Models;
+using AccessibleAI.Bots.Core.Language;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.Helpers;
 

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
-using AccessibleAI.Bots.LanguageUnderstanding.Models;
+using AccessibleAI.Bots.Core.Language;
 using Microsoft.Bot.Builder;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.ChitChat;

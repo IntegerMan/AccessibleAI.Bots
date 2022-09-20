@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using AccessibleAI.Bots.LanguageUnderstanding.Models;
+using AccessibleAI.Bots.Core.Language;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
 

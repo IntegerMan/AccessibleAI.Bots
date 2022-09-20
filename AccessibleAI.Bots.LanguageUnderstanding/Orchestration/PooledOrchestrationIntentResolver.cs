@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using AccessibleAI.Bots.LanguageUnderstanding.Models;
+using AccessibleAI.Bots.Core.Language;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
 
