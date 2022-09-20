@@ -43,6 +43,11 @@ switch (cluResult.TopIntent)
 
 TODO: This class is currently undocumented, but behaves similarly to CluIntentResolver.
 
+## LayeredOrchestrationIntentResolver
+
+This class is an `IIntentResolver` that allows you to use multiple `IIntentResolver`s to resolve intents in a prioritized order. 
+This can help with class imbalances between CLU projects or can help prioritize one layer over another.
+
 ## ChitChatHandlerBase
 
 TODO: This class is currently early in development and is undocumented as a result

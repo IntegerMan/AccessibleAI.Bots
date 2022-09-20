@@ -5,7 +5,7 @@ using Microsoft.Bot.Builder;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.ChitChat;
 
-public abstract class ChitChatHandlerBase
+public abstract class ChitChatHandlerBase : IIntentHandler
 {
     protected ChitChatHandlerBase(ITurnContext context)
     {
