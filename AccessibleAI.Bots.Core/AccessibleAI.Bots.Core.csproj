@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.1-dev</Version>
+		<Version>0.0.3-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -16,11 +16,11 @@
 		<Company>AccessibleAI.dev</Company>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<PackageTags>Microsoft-Bot-Framework; Conversational-AI</PackageTags>
-		<PackageReleaseNotes>Initial Version</PackageReleaseNotes>
+		<PackageReleaseNotes>Updated to Bot Builder 17</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.16.0" />
+	  <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.17.2" />
 	</ItemGroup>
 
 	<ItemGroup>

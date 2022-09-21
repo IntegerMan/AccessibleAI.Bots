@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using AccessibleAI.Bots.Core.Helpers;
 using Azure.Storage.Blobs.Specialized;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
@@ -94,25 +95,18 @@ public class ConversationBlobStorage : ITranscriptStore
 
         StringBuilder sb = new();
 
-        AppendIfNotEmpty(sb, actualActivity.Text);
+        sb.AppendIfNotEmpty(actualActivity.Text);
 
         foreach (Attachment attachment in actualActivity.Attachments)
         {
-            AppendIfNotEmpty(sb, attachment.Name);
-            AppendIfNotEmpty(sb, attachment.Content.ToString());
+            sb.AppendIfNotEmpty(attachment.Name);
+            sb.AppendIfNotEmpty(attachment.Content.ToString());
         }
 
-        AppendIfNotEmpty(sb, actualActivity.Summary);
+        sb.AppendIfNotEmpty(actualActivity.Summary);
 
         string message = sb.ToString();
         return message;
     }
 
-    private static void AppendIfNotEmpty(StringBuilder sb, string text)
-    {
-        if (!string.IsNullOrWhiteSpace(text))
-        {
-            sb.AppendLine(text);
-        }
-    }
 }

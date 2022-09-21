@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Text;
 using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace AccessibleAI.Bots.Core.Helpers;
 
@@ -16,5 +17,8 @@ public static class JsonHelpers
             return Encoding.UTF8.GetString(stream.ToArray());
         }
     }
+
+    public static object? DeserializeAdaptiveCard(string adaptiveCard)
+        => JsonConvert.DeserializeObject(adaptiveCard, new JsonSerializerSettings { MaxDepth = null });
 
 }

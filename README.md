@@ -21,7 +21,7 @@ Presently there are four key pieces of the AccessibleAI Bots Project:
 - [AccessibleAI.Bots.Tables](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Tables) - stores frequent responses to user queries in tabular form
 - [AccessibleAI.Bots.Blobs](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Blobs) - used to store easy-to-read transcripts for diagnostic purposes
 
-All packages will be made available on NuGet as pre-release packages.
+All packages are available on NuGet as pre-release packages.
 
 ## Status
 
