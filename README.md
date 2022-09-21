@@ -1,14 +1,14 @@
-# AccessibleAI Bot Project
+# AccessibleAI Bots Project
 
-The [AccessibleAI Bot Project](https://AccessibleAI.dev/botproject) is a collection of *opinionated* utility projects designed to boost the speed of developing and prototyping new bots for those comfortable with .NET development.
+The [AccessibleAI Bots Project](https://AccessibleAI.dev/bots) is a collection of *opinionated* utility projects designed to boost the speed of developing and prototyping new bots for those comfortable with .NET development.
 
 This project is currently early in development and is expanding and iterating rapidly as it is used to build several bots. 
 
 ## Vision
 
-The vision for the Accessible AI Bot Project is to provide a variety of capabilities that can be added to any bot developed using v4 of the Microsoft Bot Framework SDK.
+The vision for the Accessible AI Bots Project is to provide a variety of capabilities that can be added to any bot developed using v4 of the Microsoft Bot Framework SDK.
 
-The Accessible AI Bot Project is moderately opinionated in how classes and objects are structured in order to provide the best experience for people familiar with object-oriented programming in .NET but new to bot development.
+The Accessible AI Bots Project is moderately opinionated in how classes and objects are structured in order to provide the best experience for people familiar with object-oriented programming in .NET but new to bot development.
 
 The libraries are going to have the most immediate applicability for people building bots oriented around searching and presenting content and helping users find what they're looking for, simply because these are the types of bots it is being used to build right now.
 
