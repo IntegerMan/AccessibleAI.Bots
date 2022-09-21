@@ -92,4 +92,9 @@ public class CluIntentResolver : IIntentResolver
 
         return client.AnalyzeConversation(requestData);
     }
+
+    public ResolutionResult FindIntentWithDetails(string utterance)
+    {
+        throw new NotImplementedException();
+    }
 }

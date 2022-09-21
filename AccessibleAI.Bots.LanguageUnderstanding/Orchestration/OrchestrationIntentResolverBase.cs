@@ -44,4 +44,9 @@ public abstract class OrchestrationIntentResolverBase : IIntentResolver
     /// <param name="utterance">The utterance to be evaluated</param>
     /// <returns>The matching LanguageResult or null if none matched.</returns>
     public abstract LanguageResult? FindIntent(string utterance);
+
+    public ResolutionResult FindIntentWithDetails(string utterance)
+    {
+        throw new System.NotImplementedException();
+    }
 }

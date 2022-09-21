@@ -136,4 +136,9 @@ public class OrchestrationIntentResolver : IIntentResolver
 
         return intent;
     }
+
+    public ResolutionResult FindIntentWithDetails(string utterance)
+    {
+        throw new NotImplementedException();
+    }
 }
