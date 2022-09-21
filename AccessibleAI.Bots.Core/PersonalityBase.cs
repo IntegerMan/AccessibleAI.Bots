@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using AccessibleAI.Bots.Core.Language;
 using Microsoft.Bot.Builder;
 
-namespace AccessibleAI.Bots.LanguageUnderstanding.ChitChat;
+namespace AccessibleAI.Bots.Core;
 
-public abstract class ChitChatHandlerBase : IIntentHandler
+public abstract class PersonalityBase : IIntentHandler
 {
-    protected ChitChatHandlerBase(ITurnContext context)
+    protected PersonalityBase(ITurnContext context)
     {
         Context = context;
     }
@@ -17,7 +17,7 @@ public abstract class ChitChatHandlerBase : IIntentHandler
     /// </summary>
     protected ITurnContext Context { get; }
 
-    public async Task HandleIntentAsync(LanguageResult languageResult) 
+    public async Task HandleIntentAsync(LanguageResult languageResult)
         => await HandleIntentAsync(languageResult.IntentName);
 
     [SuppressMessage("ReSharper", "StringLiteralTypo")]
