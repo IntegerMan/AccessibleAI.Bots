@@ -9,5 +9,5 @@ public class EntityMatch
     public double ConfidenceScore { get; set; }
     public string? ListKey { get; set; }
 
-    public override string ToString() => $"{ListKey}: '{Text}' -> {Category} ({ConfidenceScore:P})";
+    public override string ToString() => $"{Category}: '{Text}' -> {ListKey} ({ConfidenceScore:P})";
 }

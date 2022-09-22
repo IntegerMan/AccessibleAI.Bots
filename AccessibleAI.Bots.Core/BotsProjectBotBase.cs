@@ -86,30 +86,31 @@ public abstract class BotsProjectBotBase : ActivityHandler
     protected virtual async Task DisplayIntentDebugInfoAsync(ConversationContext context)
     {
         IntentResolutionResult result = context.IntentResolution;
-        
+
         // Always include the top intent
-        StringBuilder sb = new(result.ToString());
+        StringBuilder sb = new();
 
         // List other relevant intents
         if (result.Intents.Any(i => i != result.TopIntent))
         {
             sb.AppendLine();
-            sb.AppendLine("Other Considered Intents");
+            sb.AppendLine("Other Considered Intents:");
 
             const int maxOtherIntents = 5;
-            result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i => sb.AppendLine(i.ToString()));
+            result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i => sb.AppendLine($"- {i}"));
         }
 
         // Display Entity information
         if (result.Entities.Any())
         {
             sb.AppendLine();
-            sb.AppendLine("Entities");
-            
-            result.Entities.ToList().ForEach(e => sb.AppendLine(e.ToString()));
+            sb.AppendLine("Entities:");
+
+            result.Entities.ToList().ForEach(e => sb.AppendLine($"- {e}"));
         }
 
-        await context.ReplyAsync(sb.ToString());
+        CardInformation info = new($"Matched Intent: {result}", sb.ToString(), null);
+        await context.SendHeroAsync(info);
     }
 
     protected abstract PersonalityBase InstantiatePersonality(ConversationContext context);
