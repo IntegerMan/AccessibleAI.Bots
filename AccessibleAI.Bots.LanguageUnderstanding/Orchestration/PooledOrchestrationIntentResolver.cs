@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using AccessibleAI.Bots.Core.Language;
 
 namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
@@ -35,18 +36,23 @@ public class PooledOrchestrationIntentResolver : OrchestrationIntentResolverBase
     /// The best overall result will be returned. If there is no overall best, the DefaultIntent will be returned.
     /// </summary>
     /// <param name="utterance">The utterance to be evaluated</param>
-    /// <returns>The matching LanguageResult or null if none matched.</returns>
-    public override LanguageResult? FindIntent(string utterance)
+    /// <returns>The matching IntentResolutionResult or null if none matched.</returns>
+    public override IntentResolutionResult FindIntent(string utterance)
     {
-        LanguageResult? bestResult = DefaultResult;
+        List<IntentMatch> matches = new();
+        
+        IntentResolutionResult bestResult = new();
         double bestConfidence = 0;
 
         foreach (OrchestrationLayer layer in Layers)
         {
-            LanguageResult? intent = layer.IntentResolver.FindIntent(utterance);
+            IntentResolutionResult intent = layer.IntentResolver.FindIntent(utterance);
+            intent.OrchestrationIntentName = layer.OrchestrationIntentName;
+
+            matches.AddRange(intent.Intents);
 
             // Ignore empty and None intents
-            if (intent == null || intent.IntentName == "None") continue;
+            if (intent.IntentName == "None") continue;
 
             // If the intent is below the layer's threshold, ignore it
             if (intent.ConfidenceScore < layer.MinConfidence) continue;
@@ -57,11 +63,13 @@ public class PooledOrchestrationIntentResolver : OrchestrationIntentResolverBase
             // If this is the best confidence so far, this is now our best result
             if (confidence > bestConfidence)
             {
-                intent.OrchestrationIntentName = layer.OrchestrationIntentName;
                 bestResult = intent;
                 bestConfidence = confidence;
             }
         }
+
+        // Add diagnostic intents
+        matches.Where(m => !bestResult.Intents.Contains(m)).ToList().ForEach(m => bestResult.AddMatchingIntent(m));
 
         return bestResult;
     }

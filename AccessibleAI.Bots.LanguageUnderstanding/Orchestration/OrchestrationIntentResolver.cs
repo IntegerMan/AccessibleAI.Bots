@@ -33,7 +33,7 @@ public class OrchestrationIntentResolver : IIntentResolver
         return response;
     }
 
-    private static LanguageResult GetIntentResultFromResponse(JsonElement conversationPrediction)
+    private static IntentResolutionResult GetIntentResultFromResponse(JsonElement conversationPrediction)
     {
         /* Sample JSON Result
         {
@@ -104,7 +104,7 @@ public class OrchestrationIntentResolver : IIntentResolver
         }
          */
 
-        LanguageResult intent = new()
+        IntentResolutionResult intent = new()
         {
             OrchestrationIntentName = conversationPrediction.GetProperty("topIntent").GetString()!
         };
@@ -122,7 +122,7 @@ public class OrchestrationIntentResolver : IIntentResolver
         return intent;
     }
 
-    public LanguageResult FindIntent(string utterance)
+    public IntentResolutionResult FindIntent(string utterance)
     {
         Response response = MakeRequest(utterance);
 
@@ -132,13 +132,8 @@ public class OrchestrationIntentResolver : IIntentResolver
             .GetProperty("prediction");
 
 
-        LanguageResult intent = GetIntentResultFromResponse(conversationPrediction);
+        IntentResolutionResult intent = GetIntentResultFromResponse(conversationPrediction);
 
         return intent;
-    }
-
-    public ResolutionResult FindIntentWithDetails(string utterance)
-    {
-        throw new NotImplementedException();
     }
 }

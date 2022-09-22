@@ -8,11 +8,6 @@ public abstract class OrchestrationIntentResolverBase : IIntentResolver
     protected List<OrchestrationLayer> Layers { get; } = new();
 
     /// <summary>
-    /// Gets or sets the default language result to use when no intent is matched. This defaults to the None intent.
-    /// </summary>
-    public LanguageResult? DefaultResult { get; set; } = LanguageResult.NoneIntent;
-
-    /// <summary>
     /// Creates a new instance of the <see cref="PooledOrchestrationIntentResolver"/> class.
     /// </summary>
     protected OrchestrationIntentResolverBase()
@@ -42,11 +37,7 @@ public abstract class OrchestrationIntentResolverBase : IIntentResolver
     /// evaluated. If no IntentResolver returns a match above the threshold, the default intent is returned.
     /// </summary>
     /// <param name="utterance">The utterance to be evaluated</param>
-    /// <returns>The matching LanguageResult or null if none matched.</returns>
-    public abstract LanguageResult? FindIntent(string utterance);
+    /// <returns>The matching IntentResolutionResult or null if none matched.</returns>
+    public abstract IntentResolutionResult FindIntent(string utterance);
 
-    public ResolutionResult FindIntentWithDetails(string utterance)
-    {
-        throw new System.NotImplementedException();
-    }
 }

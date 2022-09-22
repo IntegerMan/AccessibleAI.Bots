@@ -23,7 +23,7 @@ public class CluIntentResolver : IIntentResolver
         _deployment = deployment;
     }
 
-    public LanguageResult FindIntent(string utterance)
+    public IntentResolutionResult FindIntent(string utterance)
     {
         Response response = MakeCluRequest(utterance);
 
@@ -65,14 +65,14 @@ public class CluIntentResolver : IIntentResolver
         JsonElement conversationalTaskResult = result.RootElement;
         JsonElement conversationPrediction = conversationalTaskResult.GetProperty("result").GetProperty("prediction");
 
-        LanguageResult intent = GetIntentResultFromCluResponse(conversationPrediction);
+        IntentResolutionResult intent = GetIntentResultFromCluResponse(conversationPrediction);
 
         return intent;
     }
 
-    private static LanguageResult GetIntentResultFromCluResponse(JsonElement conversationPrediction)
+    private static IntentResolutionResult GetIntentResultFromCluResponse(JsonElement conversationPrediction)
     {
-        LanguageResult intent = new()
+        IntentResolutionResult intent = new()
         {
             IntentName = conversationPrediction.GetProperty("topIntent").GetString()!
         };
@@ -91,10 +91,5 @@ public class CluIntentResolver : IIntentResolver
         RequestContent requestData = RequestHelpers.BuildLanguageRequest(utterance, _project, _deployment);
 
         return client.AnalyzeConversation(requestData);
-    }
-
-    public ResolutionResult FindIntentWithDetails(string utterance)
-    {
-        throw new NotImplementedException();
     }
 }

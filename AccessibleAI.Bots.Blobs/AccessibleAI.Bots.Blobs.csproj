@@ -7,7 +7,7 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Authors>Matt Eland</Authors>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <Version>0.0.11-dev</Version>
+	  <Version>0.0.12-dev</Version>
 	  <RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageIcon>AccessibleAI.png</PackageIcon>
@@ -35,7 +35,7 @@
 	</ItemGroup>
 	
   <ItemGroup>
-    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.4-dev" />
+    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.5-dev" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
     <PackageReference Include="Microsoft.Bot.Builder" Version="4.17.2" />
   </ItemGroup>

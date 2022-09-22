@@ -5,7 +5,7 @@ namespace AccessibleAI.Bots.LanguageUnderstanding.Helpers;
 
 internal static class IntentLoadHelpers
 {
-    internal static void ExtractIntents(LanguageResult result, JsonElement intents)
+    internal static void ExtractIntents(IntentResolutionResult result, JsonElement intents)
     {
         foreach (JsonElement intentJson in intents.EnumerateArray())
         {
@@ -19,7 +19,7 @@ internal static class IntentLoadHelpers
         }
     }    
     
-    internal static void ExtractEntities(LanguageResult result, JsonElement entities)
+    internal static void ExtractEntities(IntentResolutionResult result, JsonElement entities)
     {
         foreach (JsonElement entityJson in entities.EnumerateArray())
         {

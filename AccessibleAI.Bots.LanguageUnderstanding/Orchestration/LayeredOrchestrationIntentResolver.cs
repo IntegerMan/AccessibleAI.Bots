@@ -35,21 +35,30 @@ public class LayeredOrchestrationIntentResolver : OrchestrationIntentResolverBas
     /// evaluated. If no IntentResolver returns a match above the threshold, the default intent is returned.
     /// </summary>
     /// <param name="utterance">The utterance to be evaluated</param>
-    /// <returns>The matching LanguageResult or null if none matched.</returns>
-    public override LanguageResult? FindIntent(string utterance)
+    /// <returns>The matching IntentResolutionResult or null if none matched.</returns>
+    public override IntentResolutionResult FindIntent(string utterance)
     {
+        List<IntentMatch> bestMatches = new();
+        
         foreach (OrchestrationLayer layer in Layers.OrderByDescending(l => l.Priority))
         {
-            LanguageResult? intent = layer.IntentResolver.FindIntent(utterance);
+            IntentResolutionResult intent = layer.IntentResolver.FindIntent(utterance);
+            intent.OrchestrationIntentName = layer.OrchestrationIntentName;
 
-            if (intent != null && intent.ConfidenceScore >= layer.MinConfidence)
+            if (intent.ConfidenceScore >= layer.MinConfidence)
             {
-                intent.OrchestrationIntentName = layer.OrchestrationIntentName;
+                // Add other considered intents to the list of best matches
+                bestMatches.ForEach(m => intent.AddMatchingIntent(m));
 
                 return intent;
             }
+            else
+            {
+                // We didn't cross the confidence level, so let's add it to the list of intents for diagnostics
+                bestMatches.AddRange(intent.Intents);
+            }
         }
 
-        return DefaultResult;
+        return new();
     }
 }
