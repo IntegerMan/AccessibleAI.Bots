@@ -1,4 +1,6 @@
-﻿namespace AccessibleAI.Bots.Language.Levenshtein
+﻿using System;
+
+namespace AccessibleAI.Bots.Language.Levenshtein
 {
     public class LevenshteinEntry
     {
@@ -14,5 +16,23 @@
         public string OrchestrationName { get; }
 
         public LevenshteinMatch CreateMatch(int distance) => new LevenshteinMatch(this, distance);
+
+        public override bool Equals(object? obj)
+        {
+            return obj is LevenshteinEntry entry &&
+                   Text == entry.Text &&
+                   IntentName == entry.IntentName &&
+                   OrchestrationName == entry.OrchestrationName;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Text, IntentName, OrchestrationName);
+        }
+
+        public override string ToString()
+        {
+            return $"{OrchestrationName}/{IntentName}: {Text}";
+        }
     }
 }
