@@ -15,6 +15,6 @@ public class SimpleIntentHandler : IntentHandlerBase
         _response = response;
     }
 
-    public override async Task ReplyAsync(ITurnContext context, LanguageResult intent, CancellationToken token)
-        => await context.TypeReplyAsync(_response, token);
+    public override async Task ReplyAsync(ConversationContext context)
+        => await context.TypeReplyAsync(_response);
 }

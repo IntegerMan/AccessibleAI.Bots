@@ -6,12 +6,12 @@ namespace AccessibleAI.Bots.Core.Language;
 /// <summary>
 /// Represents the result of trying to resolve an utterance via CLU or Orchestration.
 /// </summary>
-public class LanguageResult
+public class IntentResolutionResult
 {
     private readonly Dictionary<string, EntityMatch> _entities = new();
     private readonly List<IntentMatch> _intents = new();
 
-    public LanguageResult(string intentName = "None", string orchestrationIntentName = "None")
+    public IntentResolutionResult(string intentName = "None", string orchestrationIntentName = "None")
     {
         OrchestrationIntentName = orchestrationIntentName;
         IntentName = intentName;
@@ -39,9 +39,11 @@ public class LanguageResult
     public IntentMatch? TopIntent => _intents.FirstOrDefault(i => i.Category == IntentName);
 
     public IEnumerable<EntityMatch> Entities => _entities.Values.OrderBy(e => e.Category);
-        
-        
-    public static LanguageResult NoneIntent { get; } = new("None", "None");
+
+    public IOrderedEnumerable<IntentMatch> Intents => _intents.OrderByDescending(i => i.ConfidenceScore);
+
+
+    public static IntentResolutionResult NoneIntent { get; } = new("None", "None");
 
     /// <summary>
     /// Adds an entity to the result
@@ -66,15 +68,11 @@ public class LanguageResult
     /// </summary>
     /// <param name="category">The category</param>
     /// <returns>The entity match, or null</returns>
-    public EntityMatch? GetEntity(string category)
-    {
-        return _entities.ContainsKey(category) 
+    public EntityMatch? GetEntity(string category) 
+        => _entities.ContainsKey(category) 
             ? _entities[category] 
             : null;
-    }
 
     /// <inheritdoc />
-    public override string ToString() => OrchestrationIntentName == "None" 
-        ? IntentName 
-        : $"{OrchestrationIntentName}/{IntentName}";
+    public override string ToString() => TopIntent?.ToString() ?? "No Match";
 }

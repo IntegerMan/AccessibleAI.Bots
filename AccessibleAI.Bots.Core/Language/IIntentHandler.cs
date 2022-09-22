@@ -4,6 +4,5 @@ namespace AccessibleAI.Bots.Core.Language;
 
 public interface IIntentHandler
 {
-    Task HandleIntentAsync(LanguageResult languageResult);
-    Task HandleIntentAsync(string intent);
+    Task HandleIntentAsync(ConversationContext context, string? intentName = null);
 }

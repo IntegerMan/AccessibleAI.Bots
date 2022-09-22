@@ -13,21 +13,20 @@ namespace AccessibleAI.Bots.Core.Intents;
 
 public static class ContextExtensions
 {
-    public static async Task ErrorReplyAsync(this ITurnContext context, string message, CancellationToken cancellationToken, IEnumerable<string>? suggestedActions = null)
+    public static async Task ErrorReplyAsync(this ConversationContext context, string message, IEnumerable<string>? suggestedActions = null)
     {
         // TODO: Error logging!
 
-        await context.ReplyAsync(message, cancellationToken, suggestedActions: suggestedActions);
+        await context.ReplyAsync(message, suggestedActions: suggestedActions);
     }
-    public static async Task ReplyAsync(this ITurnContext context, string message, CancellationToken cancellationToken, IEnumerable<string>? suggestedActions = null)
+    public static async Task ReplyAsync(this ConversationContext context, string message, IEnumerable<string>? suggestedActions = null)
     {
-        await context.TypeReplyAsync(message, cancellationToken: cancellationToken, delayPerCharacter: 0, suggestedActions: suggestedActions);
+        await context.TypeReplyAsync(message, delayPerCharacter: 0, suggestedActions: suggestedActions);
     }
 
     [SuppressMessage("ReSharper", "PossibleMultipleEnumeration")]
-    public static async Task<ResourceResponse[]> TypeReplyAsync(this ITurnContext context,
+    public static async Task<ResourceResponse[]> TypeReplyAsync(this ConversationContext context,
         string? message,
-        CancellationToken cancellationToken,
         int delayPerCharacter = 5,
         IEnumerable<string>? suggestedActions = null)
     {
@@ -56,25 +55,25 @@ public static class ContextExtensions
         }
 
         // Send the actions
-        return await context.SendActivitiesAsync(activities.ToArray(), cancellationToken);
+        return await context.TurnContext.SendActivitiesAsync(activities.ToArray(), context.CancellationToken);
     }
 
-    public static async Task SendThumbnailAsync(this ITurnContext context, CardInformation cardInfo, CancellationToken token, int delay = 350)
+    public static async Task SendThumbnailAsync(this ConversationContext context, CardInformation cardInfo, int delay = 350)
     {
         List<CardImage> images = new() { new CardImage(cardInfo.ImageUrl, cardInfo.ImageAltText) };
         ThumbnailCard card = new(cardInfo.Title, cardInfo.Subtitle, cardInfo.Text, images, cardInfo.Actions);
 
         IMessageActivity attachment = MessageFactory.Attachment(card.ToAttachment());
 
-        await context.SendAttachmentAsync(attachment, token, delay);
+        await context.TurnContext.SendAttachmentAsync(attachment, context.CancellationToken, delay);
     }
 
-    public static async Task SendHeroAsync(this ITurnContext context, CardInformation cardInfo, CancellationToken token, int delay = 500)
+    public static async Task SendHeroAsync(this ConversationContext context, CardInformation cardInfo, int delay = 500)
     {
         HeroCard card = CreateHeroCard(cardInfo);
         IMessageActivity attachment = MessageFactory.Attachment(card.ToAttachment());
 
-        await context.SendAttachmentAsync(attachment, token, delay);
+        await context.TurnContext.SendAttachmentAsync(attachment, context.CancellationToken, delay);
     }
 
     private static HeroCard CreateHeroCard(CardInformation cardInfo)
@@ -84,15 +83,15 @@ public static class ContextExtensions
         return card;
     }
 
-    public static Task SendCarouselAsync(this ITurnContext context,
-        IEnumerable<CardInformation> cards, CancellationToken token, int delay = 500)
+    public static Task SendCarouselAsync(this ConversationContext context,
+        IEnumerable<CardInformation> cards, int delay = 500)
     {
-        return context.SendCarouselAsync(null, cards, token, delay);
+        return context.SendCarouselAsync(null, cards, delay);
     }
 
-    public static async Task SendCarouselAsync(this ITurnContext context,
+    public static async Task SendCarouselAsync(this ConversationContext context,
         string? text,
-        IEnumerable<CardInformation> cards, CancellationToken token, int delay = 500)
+        IEnumerable<CardInformation> cards, int delay = 500)
     {
         List<Attachment> attachments = new();
         foreach (CardInformation card in cards)
@@ -112,7 +111,7 @@ public static class ContextExtensions
 
         activities.Add(MessageFactory.Carousel(attachments, text));
 
-        await context.SendActivitiesAsync(activities.ToArray(), token);
+        await context.TurnContext.SendActivitiesAsync(activities.ToArray(), context.CancellationToken);
     }
 
     public static async Task SendAttachmentAsync(this ITurnContext context, IMessageActivity attachment, CancellationToken token, int delay = 500)

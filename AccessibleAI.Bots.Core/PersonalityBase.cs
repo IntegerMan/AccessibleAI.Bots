@@ -17,13 +17,15 @@ public abstract class PersonalityBase : IIntentHandler
     /// </summary>
     protected ITurnContext Context { get; }
 
-    public async Task HandleIntentAsync(LanguageResult languageResult)
-        => await HandleIntentAsync(languageResult.IntentName);
-
     [SuppressMessage("ReSharper", "StringLiteralTypo")]
-    public async Task HandleIntentAsync(string intent)
+    public async Task HandleIntentAsync(ConversationContext context, string? intentName = null)
     {
-        switch (intent)
+        if (string.IsNullOrWhiteSpace(intentName))
+        {
+            intentName = context.IntentName;
+        }
+
+        switch (intentName)
         {
             case "None":
                 await RespondToRandomMessageAsync();
@@ -293,14 +295,14 @@ public abstract class PersonalityBase : IIntentHandler
                 await RespondToYouSeemHappyAsync();
                 break;
             default:
-                await RespondToUnmappedIntentAsync(intent);
+                await RespondToUnmappedIntentAsync(context);
                 break;
         }
     }
 
-    public virtual async Task RespondToUnmappedIntentAsync(string intent)
+    public virtual async Task RespondToUnmappedIntentAsync(ConversationContext context)
     {
-        await ReplyAsync($"Uh oh! I should have been able to respond to the {intent} intent, but I don't know how to yet.");
+        await ReplyAsync($"Uh oh! I should have been able to respond to the {context.MatchedIntent?.ToString() ?? "Empty"} intent, but I don't know how to yet.");
     }
 
     public abstract Task RespondToAreYouInARelationshipAsync();

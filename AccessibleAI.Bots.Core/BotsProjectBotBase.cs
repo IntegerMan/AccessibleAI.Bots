@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using AccessibleAI.Bots.Core.Intents;
@@ -22,88 +23,96 @@ public abstract class BotsProjectBotBase : ActivityHandler
         IntentResolver = intentResolver;
     }
 
-    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, 
+        ITurnContext<IConversationUpdateActivity> turnContext, 
+        CancellationToken cancellationToken)
     {
-        foreach (var member in membersAdded)
+        // Greet anyone that was not the target (recipient) of this message.
+        foreach (ChannelAccount _ in membersAdded.Where(m => m.Id != turnContext.Activity.Recipient.Id))
         {
-            // Greet anyone that was not the target (recipient) of this message.
-            // To learn more about Adaptive Cards, see https://aka.ms/msbot-adaptivecards for more details.
-            if (member.Id != turnContext.Activity.Recipient.Id)
-            {
-                await GreetUserAsync(turnContext, cancellationToken);
-            }
+            ConversationContext context = new(turnContext, cancellationToken, new IntentResolutionResult());
+
+            await GreetUserAsync(context);
         }
     }
 
-    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> context, CancellationToken token)
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
     {
-        LanguageResult? languageResult = IntentResolver.FindIntent(context.Activity.Text);
+        IntentResolutionResult intentResult = IntentResolver.FindIntent(turnContext.Activity.Text);
+        
+        ConversationContext context = new(turnContext, token, intentResult);
 
-        if (languageResult == null)
+        if (intentResult.TopIntent == null)
         {
-            PersonalityBase personality = InstantiatePersonality(context);
-            await personality.HandleIntentAsync("None");
+            await HandleNoneIntentAsync(context);
         }
         else
         {
-            if (context.IsEmulator())
+            if (context.IsEmulator)
             {
-                await DisplayIntentDebugInfoAsync(context, languageResult, token);
+                await DisplayIntentDebugInfoAsync(context);
             }
 
             // Run the Dialog with the new message Activity.
-            switch (languageResult.OrchestrationIntentName.ToUpperInvariant())
+            switch (intentResult.OrchestrationIntentName.ToUpperInvariant())
             {
                 case "CHITCHAT":
-                    await HandleChitChatIntentsAsync(context, languageResult, token);
+                    await HandleChitChatIntentsAsync(context);
                     break;
 
                 default:
-                    await HandleBotLogicIntentsAsync(context, languageResult, token);
+                    await HandleBotLogicIntentsAsync(context);
                     break;
             }
         }
     }
 
-    protected async Task HandleChitChatIntentsAsync(ITurnContext context, LanguageResult result, CancellationToken token)
+    protected virtual async Task HandleNoneIntentAsync(ConversationContext context)
+    {
+        PersonalityBase personality = InstantiatePersonality(context);
+        await personality.HandleIntentAsync(context, "None");
+    }
+
+    protected async Task HandleChitChatIntentsAsync(ConversationContext context)
     {
         PersonalityBase chitChat = InstantiatePersonality(context);
-        await chitChat.HandleIntentAsync(result);
+        await chitChat.HandleIntentAsync(context);
     }
 
-    protected abstract Task HandleBotLogicIntentsAsync(ITurnContext context, LanguageResult result, CancellationToken token);
+    protected abstract Task HandleBotLogicIntentsAsync(ConversationContext context);
 
+    protected abstract Task GreetUserAsync(ConversationContext context);
 
-    protected abstract Task GreetUserAsync(ITurnContext<IConversationUpdateActivity> context, CancellationToken token);
-
-    protected virtual async Task DisplayIntentDebugInfoAsync(ITurnContext context, LanguageResult languageResult, CancellationToken token)
+    protected virtual async Task DisplayIntentDebugInfoAsync(ConversationContext context)
     {
-        await context.ReplyAsync($"Matched Intent: {languageResult} with confidence {languageResult.ConfidenceScore:P}", token);
-    }
+        IntentResolutionResult result = context.IntentResolution;
+        
+        // Always include the top intent
+        StringBuilder sb = new(result.ToString());
 
-    protected virtual async Task DisplayIntentInfo(ITurnContext turnContext, LanguageResult result, CancellationToken token)
-    {
-        await turnContext.SendActivityAsync($"Matched intent: {result.TopIntent}", cancellationToken: token);
-        await DisplayEntityInfo(turnContext, result, token);
-    }
+        // List other relevant intents
+        if (result.Intents.Any(i => i != result.TopIntent))
+        {
+            sb.AppendLine();
+            sb.AppendLine("Other Considered Intents");
 
-    protected virtual async Task DisplayEntityInfo(ITurnContext turnContext, LanguageResult result, CancellationToken token)
-    {
+            const int maxOtherIntents = 5;
+            result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i => sb.AppendLine(i.ToString()));
+        }
+
+        // Display Entity information
         if (result.Entities.Any())
         {
-            foreach (EntityMatch entity in result.Entities)
-            {
-                await turnContext.SendActivityAsync($"Found entity: {entity.Text} in category {entity.Category}", cancellationToken: token);
-            }
+            sb.AppendLine();
+            sb.AppendLine("Entities");
+            
+            result.Entities.ToList().ForEach(e => sb.AppendLine(e.ToString()));
         }
-        else
-        {
-            await turnContext.SendActivityAsync("No entities found", cancellationToken: token);
-            // await turnContext.SendActivityAsync(result.Json, cancellationToken: token);
-        }
+
+        await context.ReplyAsync(sb.ToString());
     }
 
-    protected abstract PersonalityBase InstantiatePersonality(ITurnContext context);
+    protected abstract PersonalityBase InstantiatePersonality(ConversationContext context);
 
     public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
     {

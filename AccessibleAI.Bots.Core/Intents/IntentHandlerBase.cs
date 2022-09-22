@@ -17,5 +17,5 @@ public abstract class IntentHandlerBase
 
     public string IntentName { get; }
 
-    public abstract Task ReplyAsync(ITurnContext context, LanguageResult intent, CancellationToken token);
+    public abstract Task ReplyAsync(ConversationContext context);
 }
