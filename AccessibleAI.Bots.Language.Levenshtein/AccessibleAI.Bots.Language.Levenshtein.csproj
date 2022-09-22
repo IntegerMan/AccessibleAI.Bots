@@ -34,7 +34,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.6-dev" />
+    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.7-dev" />
     <PackageReference Include="Quickenshtein" Version="1.5.1" />
   </ItemGroup>
 
