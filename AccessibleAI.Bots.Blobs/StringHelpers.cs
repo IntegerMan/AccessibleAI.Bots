@@ -1,13 +1,13 @@
 ﻿using System.Text;
 
-namespace AccessibleAI.Bots.Core.Helpers;
+namespace AccessibleAI.Bots.Blobs;
 
-public static class StringHelpers
+internal static class StringHelpers
 {
     public static void AppendIfNotEmpty(this StringBuilder sb, string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return;
-        
+
         sb.AppendLine(text);
     }
 

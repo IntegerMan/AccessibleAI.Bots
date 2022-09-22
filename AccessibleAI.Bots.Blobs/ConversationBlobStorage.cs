@@ -2,7 +2,6 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using AccessibleAI.Bots.Core.Helpers;
 using Azure.Storage.Blobs.Specialized;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
