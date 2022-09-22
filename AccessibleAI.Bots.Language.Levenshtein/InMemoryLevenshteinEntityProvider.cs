@@ -10,7 +10,6 @@ public class InMemoryLevenshteinEntityProvider : ILevenshteinEntityProvider, ICo
 
     public InMemoryLevenshteinEntityProvider()
     {
-
     }
 
     public InMemoryLevenshteinEntityProvider(IEnumerable<LevenshteinEntry> entries)
