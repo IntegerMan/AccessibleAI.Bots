@@ -2,7 +2,7 @@
 using System.Linq;
 using AccessibleAI.Bots.Core.Language;
 
-namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
+namespace AccessibleAI.Bots.Core.Orchestration;
 
 /// <summary>
 /// This class is a layer-based approach to orchestrating multiple IntentResolvers by priority.
@@ -39,7 +39,7 @@ public class LayeredOrchestrationIntentResolver : OrchestrationIntentResolverBas
     public override IntentResolutionResult FindIntent(string utterance)
     {
         List<IntentMatch> bestMatches = new();
-        
+
         foreach (OrchestrationLayer layer in Layers.OrderByDescending(l => l.Priority))
         {
             IntentResolutionResult intent = layer.IntentResolver.FindIntent(utterance);

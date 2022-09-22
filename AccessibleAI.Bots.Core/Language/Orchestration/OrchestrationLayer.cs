@@ -1,6 +1,6 @@
 ﻿using AccessibleAI.Bots.Core.Language;
 
-namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
+namespace AccessibleAI.Bots.Core.Orchestration;
 
 public class OrchestrationLayer
 {

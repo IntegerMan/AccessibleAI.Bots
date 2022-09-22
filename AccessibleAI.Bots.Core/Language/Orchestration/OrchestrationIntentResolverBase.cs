@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using AccessibleAI.Bots.Core.Language;
 
-namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
+namespace AccessibleAI.Bots.Core.Orchestration;
 
 public abstract class OrchestrationIntentResolverBase : IIntentResolver
 {

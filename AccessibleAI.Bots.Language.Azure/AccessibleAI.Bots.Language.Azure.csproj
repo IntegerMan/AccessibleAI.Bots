@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
@@ -7,21 +7,17 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.7-dev</Version>
+		<Version>0.0.16-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
 		<Copyright>Copyright © Matt Eland 2022</Copyright>
-		<Description>Core functionality for building enhanced bots on the Microsoft Bot Framework using the V4 SDK</Description>
+		<Description>Bots Framework intent resolvers using Conversational Language Understanding (CLU) and Orchestration for bot development</Description>
 		<Company>AccessibleAI.dev</Company>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
-		<PackageTags>Microsoft-Bot-Framework; Conversational-AI</PackageTags>
-		<PackageReleaseNotes>Ported in more language features to support renaming LanguageUnderstanding to Language.Azure</PackageReleaseNotes>
+		<PackageTags>Microsoft-Bot-Framework; Azure-Cognitive-Services; CLU; Conversational-AI; NLP</PackageTags>
+		<PackageReleaseNotes>Using new core</PackageReleaseNotes>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.17.2" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<Resource Include="Readme.md">
@@ -36,5 +32,11 @@
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.6-dev" />
+    <PackageReference Include="Azure.AI.Language.Conversations" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.17.2" />
+  </ItemGroup>
 
 </Project>

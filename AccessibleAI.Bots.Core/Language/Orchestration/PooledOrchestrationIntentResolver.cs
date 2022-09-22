@@ -2,7 +2,7 @@
 using System.Linq;
 using AccessibleAI.Bots.Core.Language;
 
-namespace AccessibleAI.Bots.LanguageUnderstanding.Orchestration;
+namespace AccessibleAI.Bots.Core.Orchestration;
 
 /// <summary>
 /// This class is a pooled approach to orchestrating multiple IntentResolvers by confidence with priority weighting.
@@ -40,7 +40,7 @@ public class PooledOrchestrationIntentResolver : OrchestrationIntentResolverBase
     public override IntentResolutionResult FindIntent(string utterance)
     {
         List<IntentMatch> matches = new();
-        
+
         IntentResolutionResult bestResult = new();
         double bestConfidence = 0;
 

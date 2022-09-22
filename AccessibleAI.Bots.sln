@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.2.32630.192
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7622F84B-8232-43FD-8367-0CD735C7E346}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,9 +16,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Blobs", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChitChatToCluJsonConverter", "ChitChatToCluJsonConverter\ChitChatToCluJsonConverter.csproj", "{AABC99BF-ACD7-4371-9D85-933608CD8A3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.LanguageUnderstanding", "AccessibleAI.Bots.LanguageUnderstanding\AccessibleAI.Bots.LanguageUnderstanding.csproj", "{DCF2005A-0749-4C80-BA53-DB6A24D5A318}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Core", "AccessibleAI.Bots.Core\AccessibleAI.Bots.Core.csproj", "{C1E05169-6F41-4E24-884F-15807A216B8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Language.Levenshtein", "AccessibleAI.Bots.Language.Levenshtein\AccessibleAI.Bots.Language.Levenshtein.csproj", "{6968B562-86F3-4620-9E9F-5738822319EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Language.Azure", "AccessibleAI.Bots.Language.Azure\AccessibleAI.Bots.Language.Azure.csproj", "{92410835-4F06-4E38-8F2F-8A53F2C98F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibleAI.Bots.Language.Levenshtein.Tests", "AccessibleAI.Bots.Language.Levenshtein.Tests\AccessibleAI.Bots.Language.Levenshtein.Tests.csproj", "{6475E691-5371-4D78-82BD-8BEB4BA714BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,14 +42,22 @@ Global
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABC99BF-ACD7-4371-9D85-933608CD8A3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCF2005A-0749-4C80-BA53-DB6A24D5A318}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1E05169-6F41-4E24-884F-15807A216B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1E05169-6F41-4E24-884F-15807A216B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1E05169-6F41-4E24-884F-15807A216B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1E05169-6F41-4E24-884F-15807A216B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6968B562-86F3-4620-9E9F-5738822319EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6968B562-86F3-4620-9E9F-5738822319EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6968B562-86F3-4620-9E9F-5738822319EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6968B562-86F3-4620-9E9F-5738822319EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92410835-4F06-4E38-8F2F-8A53F2C98F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92410835-4F06-4E38-8F2F-8A53F2C98F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92410835-4F06-4E38-8F2F-8A53F2C98F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92410835-4F06-4E38-8F2F-8A53F2C98F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6475E691-5371-4D78-82BD-8BEB4BA714BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6475E691-5371-4D78-82BD-8BEB4BA714BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6475E691-5371-4D78-82BD-8BEB4BA714BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6475E691-5371-4D78-82BD-8BEB4BA714BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
