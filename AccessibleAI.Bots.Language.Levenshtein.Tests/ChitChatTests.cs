@@ -16,7 +16,7 @@ public class ChitChatTests
         IntentResolutionResult intent = resolver.FindIntent(utterance);
 
         // Assert
-        intent.IntentName.ShouldBe(expectedIntent, customMessage: $"{(intent.TopIntent?.ConfidenceScore ?? 0).ToString("P")} - {intent.TopIntent?.MatchDetails}" ?? "No match details");
+        intent.IntentName.ShouldBe(expectedIntent, customMessage: $"{intent.TopIntent?.ConfidenceScore ?? 0:P} - {intent.TopIntent?.MatchDetails}" ?? "No match details");
     }
 
 }

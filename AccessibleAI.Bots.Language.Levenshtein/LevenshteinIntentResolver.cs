@@ -30,6 +30,8 @@ public class LevenshteinIntentResolver : IIntentResolver
         }
     }
 
+    public double MinimumConfidence { get; set; } = 0.85;
+
     public bool CaseSensitive { get; set; }
     public bool IncludePunctuation { get; set; }
 
@@ -59,14 +61,35 @@ public class LevenshteinIntentResolver : IIntentResolver
                     int distance = CalculateDistance(utterance, NormalizeString(entry.Text), normalize: false);
 
                     LevenshteinMatch match = entry.CreateMatch(distance);
-                    matches[$"{match.Entry.OrchestrationName}/{match.Entry.IntentName}"] = match;
+
+                    string key = $"{match.Entry.OrchestrationName}/{match.Entry.IntentName}";
+
+                    if (matches.ContainsKey(key))
+                    {
+                        // If we already have the intent and our distance is less, use this distance instead
+                        if (matches[key].Distance > match.Distance)
+                        {
+                            matches[key] = match;
+                        }
+                    }
+                    else
+                    {
+                        // New intent, just accept it
+                        matches[key] = match;
+                    }
                 }
             }
 
             // Grab the best match of each intent and add it to the result
             foreach (LevenshteinMatch match in matches.Values)
             {
-                result.AddMatchingIntent(match.ToIntentMatch());
+                IntentMatch intentMatch = match.ToIntentMatch();
+
+                // Do not include low confidence results
+                if (intentMatch.ConfidenceScore >= MinimumConfidence)
+                {
+                    result.AddMatchingIntent(intentMatch);
+                }
             }
 
             // Choose the best intent
