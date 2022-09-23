@@ -14,12 +14,16 @@ public class LevenshteinMatch
     public LevenshteinEntry Entry { get; }
     public int Distance { get; }
 
-    public IntentMatch ToIntentMatch() 
-        => new()
+    public IntentMatch ToIntentMatch()
+    {
+        double confidence = (100 - Distance) / 100.0;
+
+        return new()
         {
             OrchestrationName = Entry.OrchestrationName,
             Category = Entry.IntentName,
             MatchDetails = $"on '{Entry.Text}' with distance {Distance}",
-            ConfidenceScore = Math.Max(0.0, (100 - Distance) / 100.0) // This will need some tweaking
+            ConfidenceScore = Math.Max(0.0, confidence) // This will need some tweaking
         };
+    }
 }

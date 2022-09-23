@@ -17,4 +17,19 @@ public class LevenshteinMatchTests
         // Assert
         intent.ConfidenceScore.ShouldBe(expectedConfidence);
     }
+
+    [Theory]
+    [InlineData("Hello", 1, 0.80)]
+    public void ConfidenceScoreShouldBeCorrectGivenDistanceAndWords(string text, int distance, double expectedConfidence)
+    {
+        // Arrange
+        LevenshteinEntry entry = new(text, "Test", "Test");
+        LevenshteinMatch match = entry.CreateMatch(distance);
+
+        // Act
+        IntentMatch intent = match.ToIntentMatch();
+
+        // Assert
+        intent.ConfidenceScore.ShouldBe(expectedConfidence, double.Epsilon);
+    }
 }
