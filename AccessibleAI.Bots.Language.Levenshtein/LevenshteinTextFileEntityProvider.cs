@@ -11,7 +11,7 @@ public class LevenshteinTextFileEntityProvider : ILevenshteinEntityProvider
         FilePath = filePath;
     }
 
-    public string[] Delimiters { get; set; } = new[] { "/t" };
+    public string[] Delimiters { get; set; } = new[] { "\t" };
     public string FilePath { get; }
     public bool HasHeaderRow { get; set; } = true;
     public string DefaultOrchestrationName { get; set; } = "None";
