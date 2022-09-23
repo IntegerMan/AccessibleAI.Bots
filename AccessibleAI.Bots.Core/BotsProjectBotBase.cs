@@ -97,7 +97,14 @@ public abstract class BotsProjectBotBase : ActivityHandler
             sb.AppendLine("Other Considered Intents:");
 
             const int maxOtherIntents = 5;
-            result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i => sb.AppendLine($"- {i}"));
+            result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i =>
+            {
+                sb.AppendLine($"- {i}");
+                if (!string.IsNullOrWhiteSpace(i.MatchDetails))
+                {
+                    sb.AppendLine($"    - {i}");
+                }
+            });
         }
 
         // Display Entity information
