@@ -12,7 +12,8 @@ internal static class IntentLoadHelpers
             IntentMatch intentMatch = new()
             {
                 Category = intentJson.GetProperty("category").ToString(),
-                ConfidenceScore = intentJson.GetProperty("confidenceScore").GetSingle()
+                ConfidenceScore = intentJson.GetProperty("confidenceScore").GetSingle(),
+                MatchDetails = null, // Can't think of anything to put here, but we could if we had more contextual information
             };
 
             result.AddMatchingIntent(intentMatch);
