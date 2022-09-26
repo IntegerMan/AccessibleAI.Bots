@@ -30,7 +30,7 @@ public class LevenshteinIntentMatchingTests
         IntentResolutionResult result = resolver.FindIntent(utterance);
 
         // Assert
-        result.IntentName.ShouldBe(intent);
-        result.ConfidenceScore.ShouldBeGreaterThan(0);
+        result.IntentName.ShouldBe(intent, utterance);
+        result.ConfidenceScore.ShouldBeGreaterThan(0, utterance);
     }
 }

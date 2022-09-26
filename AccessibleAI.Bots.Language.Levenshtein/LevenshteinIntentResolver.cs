@@ -58,9 +58,9 @@ public class LevenshteinIntentResolver : IIntentResolver
             {
                 foreach (LevenshteinEntry entry in provider.GetEntries())
                 {
-                    int distance = CalculateDistance(utterance, NormalizeString(entry.Text), normalize: false);
+                    int distance = CalculateDistance(utterance, NormalizeString(entry.Text));
 
-                    LevenshteinMatch match = entry.CreateMatch(distance);
+                    LevenshteinMatch match = entry.CreateMatch(distance, utterance);
 
                     string key = $"{match.Entry.OrchestrationName}/{match.Entry.IntentName}";
 
@@ -117,17 +117,17 @@ public class LevenshteinIntentResolver : IIntentResolver
 
     public int CalculateDistance(string utterance, LevenshteinEntry entry, bool normalize = true)
     {
-        return CalculateDistance(utterance, entry.Text, normalize);
-    }
+        string target = entry.Text;
 
-    public int CalculateDistance(string utterance, string target, bool normalize = true)
-    {
         if (normalize)
         {
             target = NormalizeString(target);
             utterance = NormalizeString(utterance);
         }
 
-        return Quickenshtein.Levenshtein.GetDistance(utterance, target);
+        return CalculateDistance(utterance, target);
     }
+
+    public static int CalculateDistance(string utterance, string target) 
+        => Quickenshtein.Levenshtein.GetDistance(utterance, target);
 }
