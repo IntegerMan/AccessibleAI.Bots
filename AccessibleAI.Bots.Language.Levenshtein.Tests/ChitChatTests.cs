@@ -5,12 +5,12 @@ public class ChitChatTests
 
     [Theory]
     [InlineData("Hello!", "Hello")]
-    [InlineData("I would like to buy a Winnebago", "None")]
+    [InlineData("My name is Darth Vader", "None")]
     public void UtterancesShouldBeMappedToCorrectChitChat(string utterance, string expectedIntent)
     {
         // Arrange
         LevenshteinChitChatProvider chitChat = new();
-        LevenshteinIntentResolver resolver = new(chitChat);
+        LevenshteinIntentResolver resolver = new(chitChat, 0.5);
 
         // Act
         IntentResolutionResult intent = resolver.FindIntent(utterance);
