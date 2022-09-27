@@ -26,6 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessibleAI.Bots.Language.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibleAI.Bots.Intents.DefaultIntents", "AccessibleAI.Bots.Intents.DefaultIntents\AccessibleAI.Bots.Intents.DefaultIntents.csproj", "{19862D28-75DA-44B7-B416-5CEABA9B1AF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibleAI.Bots.Intents.DefaultIntents.Tests", "AccessibleAI.Bots.Intents.DefaultIntents.Tests\AccessibleAI.Bots.Intents.DefaultIntents.Tests.csproj", "{35401E35-814D-4C83-B775-7F60AC86A544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibleAI.Bots.Testing", "AccessibleAI.Bots.Testing\AccessibleAI.Bots.Testing.csproj", "{D1C3F28E-6FE2-4696-91FF-D4902337039C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +68,14 @@ Global
 		{19862D28-75DA-44B7-B416-5CEABA9B1AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19862D28-75DA-44B7-B416-5CEABA9B1AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19862D28-75DA-44B7-B416-5CEABA9B1AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35401E35-814D-4C83-B775-7F60AC86A544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35401E35-814D-4C83-B775-7F60AC86A544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35401E35-814D-4C83-B775-7F60AC86A544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35401E35-814D-4C83-B775-7F60AC86A544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C3F28E-6FE2-4696-91FF-D4902337039C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C3F28E-6FE2-4696-91FF-D4902337039C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C3F28E-6FE2-4696-91FF-D4902337039C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C3F28E-6FE2-4696-91FF-D4902337039C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
