@@ -1,7 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using AccessibleAI.Bots.Core.Language;
-using Microsoft.Bot.Builder;
+﻿using System.Threading.Tasks;
 
 namespace AccessibleAI.Bots.Core.Intents;
 
@@ -9,8 +6,8 @@ public class SimpleIntentHandler : IntentHandlerBase
 {
     private readonly string _response;
 
-    public SimpleIntentHandler(string intentName, string triggerPhrase, string response)
-        : base(intentName, triggerPhrase)
+    public SimpleIntentHandler(string intentName, string response)
+        : base(intentName)
     {
         _response = response;
     }

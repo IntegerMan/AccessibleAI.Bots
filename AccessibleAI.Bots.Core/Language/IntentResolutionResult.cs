@@ -75,4 +75,11 @@ public class IntentResolutionResult
 
     /// <inheritdoc />
     public override string ToString() => TopIntent?.ToString() ?? "No Match";
+
+    public string IntentKey 
+        => TopIntent switch
+            {
+                null => "None/None",
+                _ => $"{TopIntent.OrchestrationName}/{TopIntent.Category}"
+            };
 }

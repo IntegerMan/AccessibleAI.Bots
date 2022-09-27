@@ -1,21 +1,23 @@
-﻿using System.Threading;
+﻿using AccessibleAI.Bots.Core.Language.Intents;
 using System.Threading.Tasks;
-using AccessibleAI.Bots.Core.Language;
-using Microsoft.Bot.Builder;
 
 namespace AccessibleAI.Bots.Core.Intents;
 
-public abstract class IntentHandlerBase
+public abstract class IntentHandlerBase : IIntentHandler
 {
-    protected IntentHandlerBase(string intentName, string? triggerPhrase)
+    protected IntentHandlerBase(string intentName, string orchestrationName = "None")
     {
-        IntentName = intentName.ToUpperInvariant();
-        TriggerPhrase = triggerPhrase;
+        IntentName = intentName;
+        OrchestrationName = orchestrationName;
     }
 
-    public string? TriggerPhrase { get; }
-
     public string IntentName { get; }
+    public string OrchestrationName { get; }
 
     public abstract Task ReplyAsync(ConversationContext context);
+
+    /// <inheritdoc />
+    public override string ToString() => Key;
+
+    public string Key => $"{OrchestrationName}/{IntentName}";
 }

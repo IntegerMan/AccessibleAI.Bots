@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
-using AccessibleAI.Bots.Core.Language;
+using AccessibleAI.Bots.Core.Language.Intents;
 using Microsoft.Bot.Builder;
 
 namespace AccessibleAI.Bots.Core;
 
-public abstract class PersonalityBase : IIntentHandler
+public abstract class PersonalityBase
 {
     protected PersonalityBase(ITurnContext context)
     {
@@ -18,12 +18,9 @@ public abstract class PersonalityBase : IIntentHandler
     protected ITurnContext Context { get; }
 
     [SuppressMessage("ReSharper", "StringLiteralTypo")]
-    public async Task HandleIntentAsync(ConversationContext context, string? intentName = null)
+    public async Task HandleIntentAsync(ConversationContext context)
     {
-        if (string.IsNullOrWhiteSpace(intentName))
-        {
-            intentName = context.IntentName;
-        }
+        string intentName = context.IntentName;
 
         switch (intentName)
         {
@@ -403,4 +400,5 @@ public abstract class PersonalityBase : IIntentHandler
     {
         await Context.SendActivityAsync(message);
     }
+
 }

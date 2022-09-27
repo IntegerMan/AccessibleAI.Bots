@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using AccessibleAI.Bots.Core.Intents;
 using AccessibleAI.Bots.Core.Language;
+using AccessibleAI.Bots.Core.Language.Intents;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
 
@@ -12,6 +14,10 @@ namespace AccessibleAI.Bots.Core;
 
 public abstract class BotsProjectBotBase : ActivityHandler
 {
+    public const string NoneIntentKey = "NONE/NONE";
+
+    private readonly Dictionary<string, IIntentHandler> _intentHandlers = new();
+
     protected ConversationState ConversationState { get; }
     protected UserState UserState { get; }
     protected IIntentResolver IntentResolver { get; }
@@ -21,10 +27,13 @@ public abstract class BotsProjectBotBase : ActivityHandler
         ConversationState = conversationState;
         UserState = userState;
         IntentResolver = intentResolver;
+
+        // Ensure we can handle the None intent by calling the virtual method
+        _intentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
     }
 
-    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, 
-        ITurnContext<IConversationUpdateActivity> turnContext, 
+    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded,
+        ITurnContext<IConversationUpdateActivity> turnContext,
         CancellationToken cancellationToken)
     {
         // Greet anyone that was not the target (recipient) of this message.
@@ -39,47 +48,34 @@ public abstract class BotsProjectBotBase : ActivityHandler
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
     {
         IntentResolutionResult intentResult = IntentResolver.FindIntent(turnContext.Activity.Text);
-        
+
         ConversationContext context = new(turnContext, token, intentResult);
 
-        if (intentResult.TopIntent == null)
+        if (context.IsEmulator)
         {
-            await HandleNoneIntentAsync(context);
+            await DisplayIntentDebugInfoAsync(context);
+        }
+
+        string key = intentResult.IntentKey.ToUpperInvariant();
+        if (_intentHandlers.ContainsKey(key))
+        {
+            await _intentHandlers[key].ReplyAsync(context);
         }
         else
         {
             if (context.IsEmulator)
             {
-                await DisplayIntentDebugInfoAsync(context);
+                await context.ErrorReplyAsync($"No intent handler registered for {key}");
             }
 
-            // Run the Dialog with the new message Activity.
-            switch (intentResult.OrchestrationIntentName.ToUpperInvariant())
-            {
-                case "CHITCHAT":
-                    await HandleChitChatIntentsAsync(context);
-                    break;
-
-                default:
-                    await HandleBotLogicIntentsAsync(context);
-                    break;
-            }
+            await HandleNoneIntentAsync(context);
         }
     }
 
     protected virtual async Task HandleNoneIntentAsync(ConversationContext context)
     {
-        PersonalityBase personality = InstantiatePersonality(context);
-        await personality.HandleIntentAsync(context, "None");
+        await context.TypeReplyAsync("I'm sorry, I don't understand.");
     }
-
-    protected async Task HandleChitChatIntentsAsync(ConversationContext context)
-    {
-        PersonalityBase chitChat = InstantiatePersonality(context);
-        await chitChat.HandleIntentAsync(context);
-    }
-
-    protected abstract Task HandleBotLogicIntentsAsync(ConversationContext context);
 
     protected abstract Task GreetUserAsync(ConversationContext context);
 
@@ -125,10 +121,27 @@ public abstract class BotsProjectBotBase : ActivityHandler
     public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
     {
         await base.OnTurnAsync(turnContext, cancellationToken);
-        
+
         // Save any state changes that might have occurred during the turn.
         await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
         await UserState.SaveChangesAsync(turnContext, false, cancellationToken);
     }
 
+    public void RegisterNoneIntentHandler(IIntentHandler handler) => RegisterIntentHandler(NoneIntentKey, handler);
+
+    public void RegisterIntentHandler(string key, IIntentHandler intentHandler)
+    {
+        // Parameter Validation
+        if (string.IsNullOrWhiteSpace(key))
+        {
+            throw new ArgumentException($"'{nameof(key)}' cannot be null or whitespace.", nameof(key));
+        }
+        if (intentHandler is null)
+        {
+            throw new ArgumentNullException(nameof(intentHandler));
+        }
+
+        // Add or update the handler
+        _intentHandlers[key.ToUpperInvariant()] = intentHandler;
+    }
 }
