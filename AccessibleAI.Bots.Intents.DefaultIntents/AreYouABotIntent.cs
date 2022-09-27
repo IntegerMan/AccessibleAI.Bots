@@ -3,9 +3,9 @@ using AccessibleAI.Bots.Core.Intents;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
-public class AreYouABotIntent : IntentHandlerBase
+public class AreYouABotIntent : ChitChatIntentBase
 {
-    public AreYouABotIntent(string intentName = "AreYouABot", string orchestrationName = "ChitChat") : base(intentName)
+    public AreYouABotIntent(string intentName = "AreYouABot") : base(intentName)
     {
     }
 

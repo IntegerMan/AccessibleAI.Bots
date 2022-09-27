@@ -1,18 +1,20 @@
+﻿using AccessibleAI.Bots.Intents.DefaultIntents.Social;
+
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
-public class AmIABotTests
+public class YouSeemHappyTests
 {
     [Fact]
-    public async Task AmIABotShouldSayYes()
+    public async Task ExclamationTests()
     {
         // Arrange
-        GoodEveningIntent intent = new();
+        YouSeemHappyIntent intent = new();
         TestConversationContext context = new();
 
         // Act
         await intent.ReplyAsync(context);
 
         // Assert
-        context.ShouldContain("I'm a Bot");            
+        context.ShouldContain("!");            
     }
 }

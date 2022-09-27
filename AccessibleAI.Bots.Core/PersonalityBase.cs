@@ -27,78 +27,6 @@ public abstract class PersonalityBase
             case "None":
                 await RespondToRandomMessageAsync();
                 break;
-            case "ChitChat.AreYouABot":
-                await RespondToAreYouABotAsync();
-                break;
-            case "ChitChat.AreYouInARelationship":
-                await RespondToAreYouInARelationshipAsync();
-                break;
-            case "ChitChat.AskMeAQuestion":
-                await RespondToAskMeAQuestionAsync();
-                break;
-            case "ChitChat.BeFriends":
-                await RespondToBeFriendsAsync();
-                break;
-            case "ChitChat.BeFunny":
-                await RespondToBeFunnyAsync();
-                break;
-            case "ChitChat.BeQuiet":
-                await RespondToBeQuietAsync();
-                break;
-            case "ChitChat.BodyQuestion":
-                await RespondToBodyQuestionAsync();
-                break;
-            case "ChitChat.Boring":
-                await RespondToYouAreBoringAsync();
-                break;
-            case "ChitChat.CanYouChatWithMe":
-                await RespondToCanYouChatWithMeAsync();
-                break;
-            case "ChitChat.CanYouClarifyThat":
-                await RespondToCanYouClarifyThatAsync();
-                break;
-            case "ChitChat.CanYouHugMe":
-                await RespondToCanYouHugMeAsync();
-                break;
-            case "ChitChat.CanYouLoveMe":
-                await RespondToCanYouLoveAsync();
-                break;
-            case "ChitChat.DoILookNice":
-                await RespondToDoILookNiceAsync();
-                break;
-            case "ChitChat.DoYouEat":
-                await RespondToDoYouEatAsync();
-                break;
-            case "ChitChat.DoYouLikeMe":
-                await RespondToDoYouLikeMeAsync();
-                break;
-            case "ChitChat.DoYouLikeRandomThing":
-                await RespondToDoYouLikeRandomThingAsync();
-                break;
-            case "ChitChat.DoYouLove":
-                await RespondToDoYouLoveAsync();
-                break;
-            case "ChitChat.Goodbye":
-                await RespondToGoodbyeAsync();
-                break;
-            case "ChitChat.GoodEvening":
-                await RespondToGoodEveningAsync();
-                break;
-            case "ChitChat.GoodMorning":
-                await RespondToGoodMorningAsync();
-                break;
-            case "ChitChat.GoodNight":
-                await RespondToGoodNightAsync();
-                break;
-            case "ChitChat.HappyHoliday":
-                await RespondToHappyHolidayAsync();
-                break;
-            case "ChitChat.HaveYouMetBot":
-                await RespondToHaveYouMetBotAsync();
-                break;
-            case "ChitChat.Hello":
-                await RespondToHelloAsync();
-                break;
             case "ChitChat.HelloOtherBot":
                 await RespondToHelloWrongNameAsync();
                 break;
@@ -288,9 +216,6 @@ public abstract class PersonalityBase
             case "ChitChat.YoureWelcome":
                 await RespondToYouAreWelcomeAsync();
                 break;
-            case "ChitChat.YouSeemHappy":
-                await RespondToYouSeemHappyAsync();
-                break;
             default:
                 await RespondToUnmappedIntentAsync(context);
                 break;
@@ -302,99 +227,7 @@ public abstract class PersonalityBase
         await ReplyAsync($"Uh oh! I should have been able to respond to the {context.MatchedIntent?.ToString() ?? "Empty"} intent, but I don't know how to yet.");
     }
 
-    public abstract Task RespondToAreYouInARelationshipAsync();
-    public abstract Task RespondToAreYouABotAsync();
     public abstract Task RespondToRandomMessageAsync();
-    public abstract Task RespondToYouSeemHappyAsync();
-    public abstract Task RespondToAskMeAQuestionAsync();
-    public abstract Task RespondToBeFriendsAsync();
-    public abstract Task RespondToBeQuietAsync();
-    public abstract Task RespondToBeFunnyAsync();
-    public abstract Task RespondToBodyQuestionAsync();
-    public abstract Task RespondToYouAreBoringAsync();
-    public abstract Task RespondToCanYouChatWithMeAsync();
-    public abstract Task RespondToCanYouClarifyThatAsync();
-    public abstract Task RespondToCanYouHugMeAsync();
-    public abstract Task RespondToCanYouLoveAsync();
-    public abstract Task RespondToDoILookNiceAsync();
-    public abstract Task RespondToDoYouEatAsync();
-    public abstract Task RespondToDoYouLikeMeAsync();
-    public abstract Task RespondToDoYouLikeRandomThingAsync();
-    public abstract Task RespondToDoYouLoveAsync();
-    public abstract Task RespondToGoodbyeAsync();
-    public abstract Task RespondToGoodEveningAsync();
-    public abstract Task RespondToGoodMorningAsync();
-    public abstract Task RespondToGoodNightAsync();
-    public abstract Task RespondToHappyHolidayAsync();
-    public abstract Task RespondToHelloAsync();
-    public abstract Task RespondToHelloWrongNameAsync();
-    public abstract Task RespondToHighFiveFistBumpAsync();
-    public abstract Task RespondToHaveYouMetBotAsync();
-    public abstract Task RespondToHowAreYouAsync();
-    public abstract Task RespondToHowIsYourDayAsync();
-    public abstract Task RespondToHowOldAreYouAsync();
-    public abstract Task RespondToIamAngryAsync();
-    public abstract Task RespondToIamHungryAsync();
-    public abstract Task RespondToIamBoredAsync();
-    public abstract Task RespondToIamHappyAsync();
-    public abstract Task RespondToIamJokingAsync();
-    public abstract Task RespondToIamSadAsync();
-
-    public virtual async Task RespondToIamSuicidalAsync()
-    {
-        await ReplyAsync("The National Suicide Prevention Lifeline is available 24/7. You can call 1-800-273-8255 or visit [www.suicidepreventionlifeline.org](www.suicidepreventionlifeline.org).");
-    }
-    public abstract Task RespondToIamTiredAsync();
-    public abstract Task RespondToIFeelAloneAsync();
-    public abstract Task RespondToILikeYouAsync();
-    public abstract Task RespondToILoveYouAsync();
-    public abstract Task RespondToILoveRandomThingAsync();
-    public abstract Task RespondToIHaveReturnedAsync();
-    public abstract Task RespondToIMissedYouAsync();
-    public abstract Task RespondToDoThisImpossibleThingAsync();
-    public abstract Task RespondToImSorryAsync();
-    public abstract Task RespondToIsThisWorkingAsync();
-    public abstract Task RespondToRandomInformationAboutMeAsync();
-    public abstract Task RespondToNiceToMeetYouAsync();
-    public abstract Task RespondToLetsMarryAsync();
-    public abstract Task RespondToPositiveReactionAsync();
-    public abstract Task RespondToPleaseSingToMeAsync();
-    public abstract Task RespondToPleaseWaitAsync();
-    public abstract Task RespondToTellMeAJokeAsync();
-    public abstract Task RespondToTellMeAnotherJokeAsync();
-    public abstract Task RespondToTellMeAboutMeAsync();
-    public abstract Task RespondToTellMeAboutYourFamilyAsync();
-    public abstract Task RespondToThankYouAsync();
-    public abstract Task RespondToThatIsRepetitiveAsync();
-    public abstract Task RespondToThatWasGoodAsync();
-    public abstract Task RespondToThatWasNotFunnyAsync();
-    public abstract Task RespondToWhatDoYouDoAsync();
-    public abstract Task RespondToWhatDoYouThinkOfMeAsync();
-    public abstract Task RespondToWhatDoYouThinkOfBotAsync();
-    public abstract Task RespondToWhatDoYouThinkOfTechAsync();
-    public abstract Task RespondToWhatIsTheBestXAsync();
-    public abstract Task RespondToWhatIsTheMeaningOfLifeAsync();
-    public abstract Task RespondToWhatIsYourGenderAsync();
-    public abstract Task RespondToWhatIsYourJobAsync();
-    public abstract Task RespondToWhatsNewAsync();
-    public abstract Task RespondToWhereAreYouAsync();
-    public abstract Task RespondToWhoIsCuterYouOrMeAsync();
-    public abstract Task RespondToWhatIsYourNameAsync();
-    public abstract Task RespondToWhoIsSmarterYouOrMeAsync();
-    public abstract Task RespondToWhoIsYourBossAsync();
-    public abstract Task RespondToWhoMadeYouAsync();
-    public abstract Task RespondToMyBadAsync();
-    public abstract Task RespondToAreYouPlanningWorldDominationAsync();
-    public abstract Task RespondToYouAreFunnyAsync();
-    public abstract Task RespondToYouAreRightAsync();
-    public abstract Task RespondToYouAreSmartAsync();
-    public abstract Task RespondToYouAreStupidAsync();
-    public abstract Task RespondToYouAreUglyAsync();
-    public abstract Task RespondToYouHateMeAsync();
-    public abstract Task RespondToYouAreFiredAsync();
-    public abstract Task RespondToYouAreNotHelpfulAsync();
-    public abstract Task RespondToYouAreNotMakingSenseAsync();
-    public abstract Task RespondToYouAreWelcomeAsync();
 
     protected async Task ReplyAsync(string message)
     {

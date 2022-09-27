@@ -1,6 +1,8 @@
 ﻿using AccessibleAI.Bots.Core;
 using AccessibleAI.Bots.Core.Language;
 using Microsoft.Bot.Schema;
+using Shouldly;
+using System.Text;
 
 namespace AccessibleAI.Bots.Testing;
 
@@ -10,6 +12,17 @@ public class TestConversationContext : ConversationContext
         : base(new TestTurnContext(), default, result ?? new IntentResolutionResult())
     {
         TestContext = (TestTurnContext)TurnContext;
+    }
+
+    public void ShouldContain(string message)
+    {
+        StringBuilder sb = new();
+        foreach (string m in Messages)
+        {
+            sb.AppendLine(m);
+        }
+
+        Messages.ShouldContain(m => m.Contains(message, StringComparison.InvariantCultureIgnoreCase), sb.ToString());
     }
 
     public TestTurnContext TestContext { get; }

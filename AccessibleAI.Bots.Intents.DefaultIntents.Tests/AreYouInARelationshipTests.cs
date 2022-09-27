@@ -1,18 +1,20 @@
+﻿using AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
+
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
-public class AmIABotTests
+public class AreYouInARelationshipTests
 {
     [Fact]
     public async Task AmIABotShouldSayYes()
     {
         // Arrange
-        GoodEveningIntent intent = new();
+        AreYouInARelationshipIntent intent = new();
         TestConversationContext context = new();
 
         // Act
         await intent.ReplyAsync(context);
 
         // Assert
-        context.ShouldContain("I'm a Bot");            
+        context.ShouldContain("not willing");
     }
 }

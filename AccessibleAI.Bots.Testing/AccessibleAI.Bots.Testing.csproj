@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Shouldly" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AccessibleAI.Bots.Core\AccessibleAI.Bots.Core.csproj" />
   </ItemGroup>
 
