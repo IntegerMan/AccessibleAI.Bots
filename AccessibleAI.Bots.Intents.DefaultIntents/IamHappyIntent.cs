@@ -3,14 +3,16 @@ using AccessibleAI.Bots.Core.Intents;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
-public class HappyHolidayIntent : ChitChatIntentBase
+public class IamHappyIntent : ChitChatIntentBase
 {
-    public HappyHolidayIntent(string intentName = "HappyHoliday") : base(intentName)
+    public IamHappyIntent(string intentName = "IamHappy") : base(intentName)
     {
     }
 
     public override async Task ReplyAsync(ConversationContext context)
     {
-        await context.TypeReplyAsync("And to you as well!");
+        await context.TypeReplyAsync("I'm glad you're happy.");
     }
 }
+
+

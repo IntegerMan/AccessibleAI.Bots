@@ -24,42 +24,6 @@ public abstract class PersonalityBase
 
         switch (intentName)
         {
-            case "None":
-                await RespondToRandomMessageAsync();
-                break;
-            case "ChitChat.HelloOtherBot":
-                await RespondToHelloWrongNameAsync();
-                break;
-            case "ChitChat.HighFiveFistBump":
-                await RespondToHighFiveFistBumpAsync();
-                break;
-            case "ChitChat.HowAreYou":
-                await RespondToHowAreYouAsync();
-                break;
-            case "ChitChat.HowIsYourDayGoing":
-                await RespondToHowIsYourDayAsync();
-                break;
-            case "ChitChat.HowOldAreYou":
-                await RespondToHowOldAreYouAsync();
-                break;
-            case "ChitChat.IamAngry":
-                await RespondToIamAngryAsync();
-                break;
-            case "ChitChat.IamBored":
-                await RespondToIamBoredAsync();
-                break;
-            case "ChitChat.IamHappy":
-                await RespondToIamHappyAsync();
-                break;
-            case "ChitChat.IamJoking":
-                await RespondToIamJokingAsync();
-                break;
-            case "ChitChat.IamSad":
-                await RespondToIamSadAsync();
-                break;
-            case "ChitChat.IamSuicidal":
-                await RespondToIamSuicidalAsync();
-                break;
             case "ChitChat.IamTired":
                 await RespondToIamTiredAsync();
                 break;
@@ -216,18 +180,8 @@ public abstract class PersonalityBase
             case "ChitChat.YoureWelcome":
                 await RespondToYouAreWelcomeAsync();
                 break;
-            default:
-                await RespondToUnmappedIntentAsync(context);
-                break;
         }
     }
-
-    public virtual async Task RespondToUnmappedIntentAsync(ConversationContext context)
-    {
-        await ReplyAsync($"Uh oh! I should have been able to respond to the {context.MatchedIntent?.ToString() ?? "Empty"} intent, but I don't know how to yet.");
-    }
-
-    public abstract Task RespondToRandomMessageAsync();
 
     protected async Task ReplyAsync(string message)
     {

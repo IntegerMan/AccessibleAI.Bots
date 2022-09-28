@@ -14,3 +14,5 @@ public class AreYouABotIntent : ChitChatIntentBase
         await context.TypeReplyAsync("Of course I'm a bot. I was built using the Microsoft Bot Framework with added components from the Accessible AI Bots project.");
     }
 }
+
+

@@ -3,14 +3,14 @@ using AccessibleAI.Bots.Core.Intents;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Negative;
 
-public class BoringIntent : ChitChatIntentBase
+public class BoredIntent : ChitChatIntentBase
 {
-    public BoringIntent(string intentName = "Boring") : base(intentName)
+    public BoredIntent(string intentName = "IamBored") : base(intentName)
     {
     }
 
     public override async Task ReplyAsync(ConversationContext context)
     {
-        await context.TypeReplyAsync("I'm only as interesting as I was made to be.");
+        await context.TypeReplyAsync("If you're bored you may want to try something else.");
     }
 }
