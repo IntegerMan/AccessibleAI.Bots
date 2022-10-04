@@ -1,3 +1,5 @@
+using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
+
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class AmIABotTests
@@ -6,7 +8,7 @@ public class AmIABotTests
     public async Task AmIABotShouldSayYes()
     {
         // Arrange
-        GoodEveningIntent intent = new();
+        AreYouABotIntent intent = new();
         TestConversationContext context = new();
 
         // Act
