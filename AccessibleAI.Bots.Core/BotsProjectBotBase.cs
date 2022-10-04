@@ -116,8 +116,6 @@ public abstract class BotsProjectBotBase : ActivityHandler
         await context.SendHeroAsync(info);
     }
 
-    protected abstract PersonalityBase InstantiatePersonality(ConversationContext context);
-
     public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
     {
         await base.OnTurnAsync(turnContext, cancellationToken);
