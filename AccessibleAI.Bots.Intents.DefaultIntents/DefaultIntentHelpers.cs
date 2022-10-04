@@ -1,10 +1,5 @@
 ﻿using AccessibleAI.Bots.Core;
 using AccessibleAI.Bots.Core.Intents;
-using AccessibleAI.Bots.Intents.DefaultIntents.Body;
-using AccessibleAI.Bots.Intents.DefaultIntents.Humor;
-using AccessibleAI.Bots.Intents.DefaultIntents.Social;
-using AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
-using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
@@ -12,11 +7,16 @@ public static class DefaultIntentHelpers
 {
     public static void AddDefaultIntents(this BotsProjectBotBase bot)
     {
-        AddIntent(bot, new AreYouABotIntent());
-        AddIntent(bot, new AreYouInARelationshipIntent());
-        AddIntent(bot, new AskMeAQuestionIntent());
-        AddIntent(bot, new YouSeemHappyIntent());
-        AddIntent(bot, new BeFriendsIntent());
+        // Find all intents in this assembly that inherit from ChitChatIntentBase
+        IEnumerable<Type> intents = typeof(DefaultIntentHelpers).Assembly.GetTypes().Where(t => t.IsAssignableFrom(typeof(ChitChatIntentBase)));
+
+        // Register those types as intent handlers
+        foreach (Type intentType in intents)
+        {
+            ChitChatIntentBase intent = (ChitChatIntentBase)Activator.CreateInstance(intentType)!;
+
+            AddIntent(bot, intent);
+        }
     }
 
     public static void AddIntent(this BotsProjectBotBase bot, IntentHandlerBase intent)
