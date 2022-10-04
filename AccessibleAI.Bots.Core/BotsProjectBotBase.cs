@@ -16,7 +16,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
 {
     public const string NoneIntentKey = "NONE/NONE";
 
-    private readonly Dictionary<string, IIntentHandler> _intentHandlers = new();
+    protected Dictionary<string, IIntentHandler> IntentHandlers { get; } = new();
 
     protected ConversationState ConversationState { get; }
     protected UserState UserState { get; }
@@ -29,7 +29,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
         IntentResolver = intentResolver;
 
         // Ensure we can handle the None intent by calling the virtual method
-        _intentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
+        IntentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
     }
 
     protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded,
@@ -57,9 +57,9 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
 
         string key = intentResult.IntentKey.ToUpperInvariant();
-        if (_intentHandlers.ContainsKey(key))
+        if (IntentHandlers.ContainsKey(key))
         {
-            await _intentHandlers[key].ReplyAsync(context);
+            await IntentHandlers[key].ReplyAsync(context);
         }
         else
         {
@@ -140,6 +140,6 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
 
         // Add or update the handler
-        _intentHandlers[key.ToUpperInvariant()] = intentHandler;
+        IntentHandlers[key.ToUpperInvariant()] = intentHandler;
     }
 }
