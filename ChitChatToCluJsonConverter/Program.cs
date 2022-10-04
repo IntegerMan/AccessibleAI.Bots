@@ -54,27 +54,33 @@ public class Program
         HashSet<string> utterances = new();
         Dictionary<string, List<string>> intents = new();
 
-        while (!parser.EndOfData)
+        using (StreamWriter writer = new StreamWriter("output.tsv"))
         {
-            string[] row = parser.ReadFields()!;
 
-            string utterance = row[0];
-
-            // Some of the chit chat stuff actually has duplicates, which CLU import doesn't like, so enforce uniqueness
-            if (utterances.Contains(utterance))
+            while (!parser.EndOfData)
             {
-                continue;
+                string[] row = parser.ReadFields()!;
+
+                string utterance = row[0];
+
+                // Some of the chit chat stuff actually has duplicates, which CLU import doesn't like, so enforce uniqueness
+                if (utterances.Contains(utterance))
+                {
+                    continue;
+                }
+                utterances.Add(utterance);
+
+                string intent = row[1];
+
+                if (!intents.ContainsKey(intent))
+                {
+                    intents.Add(intent, new List<string>());
+                }
+
+                intents[intent].Add(utterance);
+
+                writer.WriteLine($"{utterance}\t{intent}");
             }
-            utterances.Add(utterance);
-
-            string intent = row[1];
-
-            if (!intents.ContainsKey(intent))
-            {
-                intents.Add(intent, new List<string>());
-            }
-
-            intents[intent].Add(utterance);
         }
 
         return intents;
