@@ -1,4 +1,6 @@
-﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
+﻿using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
+
+namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class AskMeAQuestionTests
 {

@@ -4,6 +4,7 @@ using AccessibleAI.Bots.Intents.DefaultIntents.Body;
 using AccessibleAI.Bots.Intents.DefaultIntents.Humor;
 using AccessibleAI.Bots.Intents.DefaultIntents.Social;
 using AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
+using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
