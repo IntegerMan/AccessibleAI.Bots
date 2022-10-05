@@ -1,6 +1,4 @@
-﻿using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
 public abstract class ChitChatIntentBase : IntentHandlerBase
 {

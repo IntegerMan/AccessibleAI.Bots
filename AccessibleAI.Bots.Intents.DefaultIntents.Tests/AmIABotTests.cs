@@ -1,4 +1,5 @@
 using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
+using AccessibleAI.Bots.Testing;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 

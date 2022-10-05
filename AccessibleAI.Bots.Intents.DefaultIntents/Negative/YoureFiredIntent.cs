@@ -1,7 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Negative;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Negative;
 
 public class YoureFiredIntent : ChitChatIntentBase
 {

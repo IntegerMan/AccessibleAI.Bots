@@ -1,7 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Social;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Social;
 
 public class IMissedYouIntent : ChitChatIntentBase
 {

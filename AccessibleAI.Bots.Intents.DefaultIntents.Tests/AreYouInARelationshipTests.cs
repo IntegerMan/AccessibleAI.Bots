@@ -1,6 +1,4 @@
-﻿using AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class AreYouInARelationshipTests
 {

@@ -1,7 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Body;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Body;
 
 public class ImHungryIntent : ChitChatIntentBase
 {

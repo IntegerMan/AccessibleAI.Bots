@@ -142,4 +142,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
         // Add or update the handler
         IntentHandlers[key.ToUpperInvariant()] = intentHandler;
     }
+
+    public void RegisterIntentHandler(string key, string response) 
+        => RegisterIntentHandler(key, new SimpleIntentHandler(key, response));
 }
