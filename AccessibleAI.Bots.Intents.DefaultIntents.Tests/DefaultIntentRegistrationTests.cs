@@ -1,17 +1,12 @@
-using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Language.Intents;
-using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
-using Microsoft.Bot.Builder;
-
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
-public class DefaultIntentRegistrationTests
+public class DefaultIntentRegistrationTests : BotTestBase
 {
     [Fact]
     public void DefaultIntentRegistrationShouldRegisterIntents()
     {
         // Arrange
-        TestBot bot = new(default, default, default);
+        TestBot bot = CreateBot();
         int startCount = bot.Intents.Count;
 
         // Act
@@ -20,18 +15,21 @@ public class DefaultIntentRegistrationTests
         // Assert
         bot.Intents.Count.ShouldBeGreaterThan(startCount + 80); // 87 pre-built intents
     }
-}
 
-public class TestBot : BotsProjectBotBase
-{
-    public TestBot(ConversationState conversationState, UserState userState, IIntentResolver intentResolver) : base(conversationState, userState, intentResolver)
+    [Fact]
+    public void BotShouldRecognizeRegisteredDefaultIntents()
     {
-    }
+        // Arrange
+        TestBot bot = CreateBot();
+        bot.AddDefaultIntents();
+        TestTurnContext context = new("Hello there!");
 
-    public IReadOnlyList<IIntentHandler> Intents => IntentHandlers.Values.ToList();
+        // Act
+        IntentResolutionResult match = bot.MatchIntent(context);
 
-    protected override Task GreetUserAsync(ConversationContext context)
-    {
-        return Task.CompletedTask;
+        // Assert
+        match.ShouldNotBeNull();
+        match.IntentName.ShouldBe("Hello");
+        match.OrchestrationIntentName.ShouldBe("ChitChat");
     }
 }

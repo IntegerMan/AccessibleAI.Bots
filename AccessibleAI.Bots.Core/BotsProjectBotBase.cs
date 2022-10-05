@@ -26,7 +26,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
     {
         ConversationState = conversationState;
         UserState = userState;
-        IntentResolver = intentResolver;
+        IntentResolver = intentResolver ?? throw new ArgumentNullException(nameof(intentResolver));
 
         // Ensure we can handle the None intent by calling the virtual method
         IntentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
@@ -47,7 +47,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
 
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
     {
-        IntentResolutionResult intentResult = IntentResolver.FindIntent(turnContext.Activity.Text);
+        IntentResolutionResult intentResult = MatchIntent(turnContext);
 
         ConversationContext context = new(turnContext, token, intentResult);
 
@@ -71,6 +71,9 @@ public abstract class BotsProjectBotBase : ActivityHandler
             await HandleNoneIntentAsync(context);
         }
     }
+
+    public virtual IntentResolutionResult MatchIntent(ITurnContext turnContext) 
+        => IntentResolver.FindIntent(turnContext.Activity.Text);
 
     protected virtual async Task HandleNoneIntentAsync(ConversationContext context)
     {
