@@ -11,14 +11,14 @@ public class DefaultIntentRegistrationTests
     public void DefaultIntentRegistrationShouldRegisterIntents()
     {
         // Arrange
-        TestBot bot = new TestBot(default, default, default);
+        TestBot bot = new(default, default, default);
         int startCount = bot.Intents.Count;
 
         // Act
         bot.AddDefaultIntents();
 
         // Assert
-        bot.Intents.Count.ShouldBeGreaterThan(startCount);
+        bot.Intents.Count.ShouldBeGreaterThan(startCount + 80); // 87 pre-built intents
     }
 }
 
