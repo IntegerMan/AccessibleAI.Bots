@@ -1,6 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Reflection;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;

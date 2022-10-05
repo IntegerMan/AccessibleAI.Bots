@@ -1,7 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Positive;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Positive;
 
 public class ThatWasGoodIntent : ChitChatIntentBase
 {

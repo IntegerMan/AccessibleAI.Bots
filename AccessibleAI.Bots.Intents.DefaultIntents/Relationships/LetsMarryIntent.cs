@@ -1,7 +1,4 @@
-﻿using AccessibleAI.Bots.Core;
-using AccessibleAI.Bots.Core.Intents;
-
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
+﻿namespace AccessibleAI.Bots.Intents.DefaultIntents.Relationships;
 
 public class LetsMarryIntent : ChitChatIntentBase
 {

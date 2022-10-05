@@ -1,10 +1,4 @@
-﻿using AccessibleAI.Bots.Core.Language;
-using AccessibleAI.Bots.Language.Levenshtein;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AccessibleAI.Bots.Language.Levenshtein;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents;
 
