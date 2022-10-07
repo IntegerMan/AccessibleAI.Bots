@@ -1,3 +1,5 @@
+using AccessibleAI.Bots.Core.Orchestration;
+
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class DefaultIntentRegistrationTests : BotTestBase
@@ -20,7 +22,7 @@ public class DefaultIntentRegistrationTests : BotTestBase
     public void BotShouldRecognizeRegisteredDefaultIntents()
     {
         // Arrange
-        TestBot bot = CreateBot();
+        TestBot bot = CreateBot(new ChitChatIntentProvider());
         bot.AddDefaultIntents();
         TestTurnContext context = new("Hello there!");
 
