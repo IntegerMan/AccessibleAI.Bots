@@ -20,7 +20,7 @@ public abstract class BotsProjectBotBase : ActivityHandler
 
     protected ConversationState ConversationState { get; }
     protected UserState UserState { get; }
-    protected IIntentResolver IntentResolver { get; }
+    public IIntentResolver IntentResolver { get; }
 
     protected BotsProjectBotBase(ConversationState conversationState, UserState userState, IIntentResolver intentResolver)
     {
@@ -72,8 +72,11 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
     }
 
-    public virtual IntentResolutionResult MatchIntent(ITurnContext turnContext) 
-        => IntentResolver.FindIntent(turnContext.Activity.Text);
+    public IntentResolutionResult MatchIntent(ITurnContext turnContext) 
+        => MatchIntent(turnContext.Activity.Text);
+
+    public virtual IntentResolutionResult MatchIntent(string message) 
+        => IntentResolver.FindIntent(message);
 
     protected virtual async Task HandleNoneIntentAsync(ConversationContext context)
     {
