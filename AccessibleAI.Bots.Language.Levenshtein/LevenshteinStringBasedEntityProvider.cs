@@ -17,7 +17,7 @@ public class LevenshteinStringBasedEntityProvider : ILevenshteinEntityProvider
     public string DefaultIntentName { get; set; } = "None";
     public string Data { get; }
 
-    public bool LoadOrchestrationNames { get; set; } = false;
+    public bool LoadOrchestrationNames { get; set; } = true;
 
     public IEnumerable<LevenshteinEntry> GetEntries()
     {

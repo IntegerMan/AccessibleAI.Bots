@@ -7,36 +7,29 @@ namespace AccessibleAI.Bots.Language.Levenshtein;
 
 public class LevenshteinIntentResolver : IIntentResolver
 {
-    // TODO: This is going to be too much to be in-memory at once. We'll need sources instead
     private List<ILevenshteinEntityProvider> _providers = new();
 
-    public LevenshteinIntentResolver(double minConfidence = 0.5)
+    public LevenshteinIntentResolver()
     {
-        MinConfidence = minConfidence;
     }
 
-    public LevenshteinIntentResolver(ILevenshteinEntityProvider provider, double minConfidence = 0.5)
+    public LevenshteinIntentResolver(ILevenshteinEntityProvider provider)
     {
         _providers.Add(provider);
-
-        MinConfidence = minConfidence;
     }
 
-    public LevenshteinIntentResolver(IEnumerable<ILevenshteinEntityProvider> providers, double minConfidence = 0.5)
+    public LevenshteinIntentResolver(IEnumerable<ILevenshteinEntityProvider> providers)
     {
         foreach (ILevenshteinEntityProvider provider in providers)
         {
             _providers.Add(provider);
         }
-
-        MinConfidence = minConfidence;
     }
 
     public double MinimumConfidence { get; set; } = 0.5;
 
     public bool CaseSensitive { get; set; }
     public bool IncludePunctuation { get; set; }
-    public double MinConfidence { get; }
 
     public void RegisterProvider(ILevenshteinEntityProvider provider)
     {

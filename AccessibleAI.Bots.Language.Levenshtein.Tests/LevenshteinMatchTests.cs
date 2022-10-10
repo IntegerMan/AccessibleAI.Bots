@@ -6,9 +6,9 @@ public class ConfidenceTests
     [InlineData("Test", "Test", 1.0)]
     [InlineData("Tests", "Test", 0.95)]
     [InlineData("Test", "Tests", 0.95)]
-    [InlineData("Test", "Tester", 0.8)]
-    [InlineData("Tester", "Test", 0.8)]
-    [InlineData("Zeus", "Posideon", 0.416)]
+    [InlineData("Test", "Tester", 0.9)]
+    [InlineData("Tester", "Test", 0.9)]
+    [InlineData("Zeus", "Posideon", 0.516)]
     public void CalculateConfidenceYieldsCorrectResult(string entry, string utterance, double expectedConfidence)
     {
         // Arrange

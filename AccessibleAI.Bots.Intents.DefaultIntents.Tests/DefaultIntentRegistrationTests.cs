@@ -1,4 +1,3 @@
-using AccessibleAI.Bots.Core.Orchestration;
 using AccessibleAI.Bots.Language.Levenshtein;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
@@ -24,10 +23,7 @@ public class DefaultIntentRegistrationTests : BotTestBase
     {
         // Arrange
         LevenshteinIntentResolver resolver = new();
-        LevenshteinChitChatProvider levenshtein = new()
-        {
-            DefaultOrchestrationName = "ChitChat"
-        };
+        LevenshteinChitChatProvider levenshtein = new();
         resolver.RegisterProvider(levenshtein);
 
         // Act
@@ -41,34 +37,22 @@ public class DefaultIntentRegistrationTests : BotTestBase
     public void BotShouldMatchIntent()
     {
         // Arrange
-        LevenshteinIntentResolver resolver = new();
-        LevenshteinChitChatProvider levenshtein = new()
-        {
-            DefaultOrchestrationName = "ChitChat"
-        };
-        resolver.RegisterProvider(levenshtein);
-        TestBot bot = CreateBot(resolver);
+        TestBot bot = CreateBotWithChitChat();
 
         // Act
-        IntentResolutionResult match = bot.MatchIntent("Hello World");
+        IntentResolutionResult result = bot.MatchIntent("Hello JMTHY");
 
         // Assert
-        match.ShouldNotBeNull();
-        match.IntentName.ShouldBe("Hello");
-        match.OrchestrationIntentName.ShouldBe("ChitChat");
+        result.ShouldNotBeNull();
+        result.IntentName.ShouldBe("HelloOtherBot");
+        result.OrchestrationIntentName.ShouldBe("ChitChat");
     }
 
     [Fact]
     public void BotShouldRecognizeRegisteredDefaultIntents()
     {
         // Arrange
-        LevenshteinIntentResolver resolver = new();
-        LevenshteinChitChatProvider levenshtein = new()
-        {
-            DefaultOrchestrationName = "ChitChat"
-        };
-        resolver.RegisterProvider(levenshtein);
-        TestBot bot = CreateBot(resolver);
+        TestBot bot = CreateBotWithChitChat();
         bot.AddDefaultIntents();
         TestTurnContext context = new("Hello there!");
 
@@ -86,10 +70,7 @@ public class DefaultIntentRegistrationTests : BotTestBase
     {
         // Arrange
         LevenshteinIntentResolver resolver = new();
-        LevenshteinChitChatProvider levenshtein = new()
-        {
-            DefaultOrchestrationName = "ChitChat"
-        };
+        LevenshteinChitChatProvider levenshtein = new();
         resolver.RegisterProvider(levenshtein);
 
         // Act
@@ -105,10 +86,7 @@ public class DefaultIntentRegistrationTests : BotTestBase
     public void LevenshteinChitChatShouldHaveEntries()
     {
         // Arrange
-        LevenshteinChitChatProvider levenshtein = new()
-        {
-            DefaultOrchestrationName = "ChitChat"
-        };
+        LevenshteinChitChatProvider levenshtein = new();
 
         // Act
         IEnumerable<LevenshteinEntry> entries = levenshtein.GetEntries();
