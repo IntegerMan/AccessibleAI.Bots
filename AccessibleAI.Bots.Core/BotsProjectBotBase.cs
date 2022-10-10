@@ -50,13 +50,18 @@ public abstract class BotsProjectBotBase : ActivityHandler
         IntentResolutionResult intentResult = MatchIntent(turnContext);
 
         ConversationContext context = new(turnContext, token, intentResult);
+        await RespondToIntentAsync(context);
+    }
+
+    public async virtual Task RespondToIntentAsync(ConversationContext context)
+    {
 
         if (context.IsEmulator)
         {
             await DisplayIntentDebugInfoAsync(context);
         }
 
-        string key = intentResult.IntentKey.ToUpperInvariant();
+        string key = context.IntentResolution.IntentKey.ToUpperInvariant();
         if (IntentHandlers.ContainsKey(key))
         {
             await IntentHandlers[key].ReplyAsync(context);

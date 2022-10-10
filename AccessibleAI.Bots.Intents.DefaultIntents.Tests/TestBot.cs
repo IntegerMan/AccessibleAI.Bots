@@ -6,7 +6,7 @@ namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class TestBot : BotsProjectBotBase
 {
-    public TestBot(ConversationState conversationState, UserState userState, IIntentResolver intentResolver) : base(conversationState, userState, intentResolver)
+    public TestBot(ConversationState? conversationState, UserState? userState, IIntentResolver intentResolver) : base(conversationState!, userState!, intentResolver)
     {
     }
 

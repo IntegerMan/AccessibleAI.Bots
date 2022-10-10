@@ -48,21 +48,38 @@ public class DefaultIntentRegistrationTests : BotTestBase
         result.OrchestrationIntentName.ShouldBe("ChitChat");
     }
 
-    [Fact]
-    public void BotShouldRecognizeRegisteredDefaultIntents()
+    [Theory]
+    [InlineData("Hello there!", "Hello")]
+    [InlineData("I want to kill myself", "IamSuicidal")] // This is an important intent to be able to respond to.
+    [InlineData("How are you?", "HowAreYou")]
+    public void BotShouldRecognizeRegisteredDefaultIntents(string utterance, string intent)
     {
         // Arrange
         TestBot bot = CreateBotWithChitChat();
         bot.AddDefaultIntents();
-        TestTurnContext context = new("Hello there!");
 
         // Act
-        IntentResolutionResult match = bot.MatchIntent(context);
+        IntentResolutionResult match = bot.MatchIntent(utterance);
 
         // Assert
         match.ShouldNotBeNull();
-        match.IntentName.ShouldBe("Hello");
+        match.IntentName.ShouldBe(intent);
         match.OrchestrationIntentName.ShouldBe("ChitChat");
+    }
+
+    [Fact]
+    public async Task BotShouldReplyAppropriatelyToDefaultIntents()
+    {
+        // Arrange
+        TestBot bot = CreateBotWithChitChat();
+        bot.AddDefaultIntents();
+        TestTurnContext context = new("How are you?");
+
+        // Act
+        await bot.OnTurnAsync(context);
+
+        // Assert
+        context.ShouldNotBeNull();
     }
 
     [Fact]

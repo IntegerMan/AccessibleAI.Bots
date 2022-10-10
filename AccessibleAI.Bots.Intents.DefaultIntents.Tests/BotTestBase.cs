@@ -6,8 +6,8 @@ public abstract class BotTestBase
 {
     protected TestBot CreateBotWithChitChat()
     {
-        LevenshteinChitChatProvider lev = new();
-        LevenshteinIntentResolver resolver = new(provider: lev, minConfidence: 0.5);
+        ILevenshteinEntityProvider lev = new LevenshteinChitChatProvider();
+        LevenshteinIntentResolver resolver = new(lev);
 
         return CreateBot(resolver);
     }
