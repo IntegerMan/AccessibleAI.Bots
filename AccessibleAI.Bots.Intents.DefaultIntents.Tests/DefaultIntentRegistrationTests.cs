@@ -29,10 +29,28 @@ public class DefaultIntentRegistrationTests : BotTestBase
             DefaultOrchestrationName = "ChitChat"
         };
         resolver.RegisterProvider(levenshtein);
+
+        // Act
+        TestBot bot = CreateBot(resolver);
+
+        // Assert
+        bot.IntentResolver.ShouldBe(resolver);
+    }
+
+    [Fact]
+    public void BotShouldMatchIntent()
+    {
+        // Arrange
+        LevenshteinIntentResolver resolver = new();
+        LevenshteinChitChatProvider levenshtein = new()
+        {
+            DefaultOrchestrationName = "ChitChat"
+        };
+        resolver.RegisterProvider(levenshtein);
         TestBot bot = CreateBot(resolver);
 
         // Act
-        IntentResolutionResult match = bot.MatchIntent(new TestTurnContext("Hello World"));
+        IntentResolutionResult match = bot.MatchIntent("Hello World");
 
         // Assert
         match.ShouldNotBeNull();

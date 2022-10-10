@@ -96,7 +96,9 @@ public class LevenshteinIntentResolver : IIntentResolver
             }
 
             // Choose the best intent
-            result.IntentName = result.Intents.OrderByDescending(i => i.ConfidenceScore).FirstOrDefault()?.Category ?? "None";
+            IntentMatch bestMatch = result.Intents.OrderByDescending(i => i.ConfidenceScore).FirstOrDefault();
+            result.IntentName = bestMatch?.Category ?? "None";
+            result.OrchestrationIntentName = bestMatch?.OrchestrationName ?? "None";
         }
 
         return result;
