@@ -16,20 +16,20 @@ public abstract class BotsProjectBotBase : ActivityHandler
 {
     public const string NoneIntentKey = "NONE/NONE";
 
-    private readonly Dictionary<string, IIntentHandler> _intentHandlers = new();
+    protected Dictionary<string, IIntentHandler> IntentHandlers { get; } = new();
 
     protected ConversationState ConversationState { get; }
     protected UserState UserState { get; }
-    protected IIntentResolver IntentResolver { get; }
+    public IIntentResolver IntentResolver { get; }
 
     protected BotsProjectBotBase(ConversationState conversationState, UserState userState, IIntentResolver intentResolver)
     {
         ConversationState = conversationState;
         UserState = userState;
-        IntentResolver = intentResolver;
+        IntentResolver = intentResolver ?? throw new ArgumentNullException(nameof(intentResolver));
 
         // Ensure we can handle the None intent by calling the virtual method
-        _intentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
+        IntentHandlers[NoneIntentKey] = new ActionIntentHandler(HandleNoneIntentAsync);
     }
 
     protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded,
@@ -45,21 +45,39 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
     }
 
-    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
+    protected override async sealed Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
     {
-        IntentResolutionResult intentResult = IntentResolver.FindIntent(turnContext.Activity.Text);
+        await RespondToMessageAsync(turnContext, token);
+    }
 
-        ConversationContext context = new(turnContext, token, intentResult);
+    public virtual async Task<ConversationContext> RespondToMessageAsync(ITurnContext turnContext, CancellationToken token = default)
+    {
+        ConversationContext context = BuildContext(turnContext, token);
+
+        await HandleIntentAsync(context);
+
+        return context;
+    }
+
+    public virtual ConversationContext BuildContext(ITurnContext turnContext, CancellationToken token = default)
+    {
+        IntentResolutionResult intentResult = MatchIntent(turnContext);
+
+        return new ConversationContext(turnContext, token, intentResult);
+    }
+
+    public async virtual Task HandleIntentAsync(ConversationContext context)
+    {
 
         if (context.IsEmulator)
         {
             await DisplayIntentDebugInfoAsync(context);
         }
 
-        string key = intentResult.IntentKey.ToUpperInvariant();
-        if (_intentHandlers.ContainsKey(key))
+        string key = context.IntentResolution.IntentKey.ToUpperInvariant();
+        if (IntentHandlers.ContainsKey(key))
         {
-            await _intentHandlers[key].ReplyAsync(context);
+            await IntentHandlers[key].ReplyAsync(context);
         }
         else
         {
@@ -71,6 +89,12 @@ public abstract class BotsProjectBotBase : ActivityHandler
             await HandleNoneIntentAsync(context);
         }
     }
+
+    public IntentResolutionResult MatchIntent(ITurnContext turnContext) 
+        => MatchIntent(turnContext.Activity.Text);
+
+    public virtual IntentResolutionResult MatchIntent(string message) 
+        => IntentResolver.FindIntent(message);
 
     protected virtual async Task HandleNoneIntentAsync(ConversationContext context)
     {
@@ -116,8 +140,6 @@ public abstract class BotsProjectBotBase : ActivityHandler
         await context.SendHeroAsync(info);
     }
 
-    protected abstract PersonalityBase InstantiatePersonality(ConversationContext context);
-
     public override async Task OnTurnAsync(ITurnContext turnContext, CancellationToken cancellationToken = default)
     {
         await base.OnTurnAsync(turnContext, cancellationToken);
@@ -142,6 +164,9 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
 
         // Add or update the handler
-        _intentHandlers[key.ToUpperInvariant()] = intentHandler;
+        IntentHandlers[key.ToUpperInvariant()] = intentHandler;
     }
+
+    public void RegisterIntentHandler(string key, string response) 
+        => RegisterIntentHandler(key, new SimpleIntentHandler(key, response));
 }

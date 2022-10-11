@@ -17,6 +17,8 @@ public class LevenshteinStringBasedEntityProvider : ILevenshteinEntityProvider
     public string DefaultIntentName { get; set; } = "None";
     public string Data { get; }
 
+    public bool LoadOrchestrationNames { get; set; } = true;
+
     public IEnumerable<LevenshteinEntry> GetEntries()
     {
         using (StringReader reader = new(Data))
@@ -34,7 +36,11 @@ public class LevenshteinStringBasedEntityProvider : ILevenshteinEntityProvider
 
                 string text = results[0];
                 string intentName = GetStringOrDefault(results, 1, DefaultIntentName);
-                string orchestrationName = GetStringOrDefault(results, 2, DefaultOrchestrationName);
+                string orchestrationName = DefaultOrchestrationName;
+                if (LoadOrchestrationNames)
+                {
+                    GetStringOrDefault(results, 2, DefaultOrchestrationName);
+                }
 
                 yield return new LevenshteinEntry(text, intentName, orchestrationName);
 

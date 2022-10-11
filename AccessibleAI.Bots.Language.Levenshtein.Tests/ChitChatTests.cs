@@ -10,7 +10,8 @@ public class ChitChatTests
     {
         // Arrange
         LevenshteinChitChatProvider chitChat = new();
-        LevenshteinIntentResolver resolver = new(chitChat, 0.5);
+        LevenshteinIntentResolver resolver = new(provider: chitChat);
+        resolver.MinimumConfidence = 0.9;
 
         // Act
         IntentResolutionResult intent = resolver.FindIntent(utterance);

@@ -1,9 +1,9 @@
 ﻿namespace AccessibleAI.Bots.Language.Levenshtein;
 
-public class LevenshteinChitChatProvider : LevenshteinTextFileEntityProvider
+public class LevenshteinChitChatProvider : AggregateLevenshteinEntityProvider
 {
-    public LevenshteinChitChatProvider() : base("chitchat.tsv")
+    public LevenshteinChitChatProvider(string orchestrationName = "ChitChat")
     {
-
+        this.Add(new LevenshteinTextFileEntityProvider("chitchat.tsv") { DefaultOrchestrationName = orchestrationName });
     }
 }

@@ -1,3 +1,6 @@
+using AccessibleAI.Bots.Intents.DefaultIntents.Curious;
+using AccessibleAI.Bots.Testing;
+
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
 
 public class AmIABotTests
@@ -13,6 +16,6 @@ public class AmIABotTests
         await intent.ReplyAsync(context);
 
         // Assert
-        context.Messages.ShouldContain(m => m.ToLowerInvariant().Contains("I'm a bot"));            
+        context.ShouldContain("I'm a Bot");            
     }
 }

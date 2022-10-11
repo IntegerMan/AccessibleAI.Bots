@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.8-dev</Version>
+		<Version>0.0.15-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -16,7 +16,7 @@
 		<Company>AccessibleAI.dev</Company>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<PackageTags>Microsoft-Bot-Framework; Conversational-AI</PackageTags>
-		<PackageReleaseNotes>Added a mechanism to display a matching utterance for intent resolvers that support it</PackageReleaseNotes>
+		<PackageReleaseNotes>Better return type for testing</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
