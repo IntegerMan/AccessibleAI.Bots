@@ -1,8 +1,12 @@
 ﻿using AccessibleAI.Bots.Core;
+using AccessibleAI.Bots.Core.Language;
 using AccessibleAI.Bots.Core.Language.Intents;
 using Microsoft.Bot.Builder;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
+namespace AccessibleAI.Bots.Testing;
 
 public class TestBot : BotsProjectBotBase
 {

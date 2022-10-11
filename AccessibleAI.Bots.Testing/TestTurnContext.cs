@@ -1,6 +1,11 @@
 ﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AccessibleAI.Bots.Testing;
 
@@ -72,7 +77,7 @@ public class TestTurnContext : ITurnContext
         return Task.FromResult(Array.Empty<ResourceResponse>());
     }
 
-    public Task<ResourceResponse> SendActivityAsync(string textReplyToSend, string speak = null, string inputHint = "acceptingInput", CancellationToken cancellationToken = default)
+    public Task<ResourceResponse> SendActivityAsync(string textReplyToSend, string? speak = null, string inputHint = "acceptingInput", CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
     }

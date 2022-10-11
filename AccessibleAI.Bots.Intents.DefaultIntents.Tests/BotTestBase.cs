@@ -9,7 +9,11 @@ public abstract class BotTestBase
         ILevenshteinEntityProvider lev = new LevenshteinChitChatProvider();
         LevenshteinIntentResolver resolver = new(lev);
 
-        return CreateBot(resolver);
+        TestBot bot = CreateBot(resolver);
+
+        bot.AddDefaultIntents();
+
+        return bot;
     }
 
     protected TestBot CreateBot(IIntentResolver? resolver = null) 

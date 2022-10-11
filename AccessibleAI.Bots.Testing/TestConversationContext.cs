@@ -2,6 +2,8 @@
 using AccessibleAI.Bots.Core.Language;
 using Microsoft.Bot.Schema;
 using Shouldly;
+using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace AccessibleAI.Bots.Testing;

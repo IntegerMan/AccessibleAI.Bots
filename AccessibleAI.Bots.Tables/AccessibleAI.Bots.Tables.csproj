@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Matt Eland</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.13-dev</Version>
+    <Version>0.0.14-dev</Version>
 	<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 	<PackageIcon>AccessibleAI.png</PackageIcon>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>

@@ -14,13 +14,15 @@ The libraries are going to have the most immediate applicability for people buil
 
 ## Packages
 
-Presently there are five key pieces of the AccessibleAI Bots Project:
+Presently there are the following components of the AccessibleAI Bots Project:
 
 - [AccessibleAI.Bots.Core](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Core) - contains common definitions and helpers. This contains the methods for easy card creation on responses.
 - [AccessibleAI.Bots.Language.Azure](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Language.Azure) - intent resolution from Azure using conversational language understanding (CLU) or orchestration workflows.
 - [AccessibleAI.Bots.Language.Levenshtein](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Language.Levenshtein) - Using [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) to calculate the difference or similarities between strings to resolve intents from utterances without Azure.
 - [AccessibleAI.Bots.Tables](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Tables) - stores frequent responses to user queries in tabular form
+- [AccessibleAI.Bots.Intents.DefaultIntents](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Intents.DefaultIntents) - contains default intent handlers and responses based on Azure's Chit Chat system.
 - [AccessibleAI.Bots.Blobs](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Blobs) - used to store easy-to-read transcripts for diagnostic purposes
+- [AccessibleAI.Bots.Testing](https://github.com/IntegerMan/AccessibleAI.Bots/tree/main/AccessibleAI.Bots.Testing) - contains helpers for testing chatbots built with the AccessibleAI Bots Project
 
 All packages are available on NuGet as pre-release packages.
 
