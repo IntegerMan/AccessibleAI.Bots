@@ -1,3 +1,4 @@
+using AccessibleAI.Bots.Core;
 using AccessibleAI.Bots.Language.Levenshtein;
 
 namespace AccessibleAI.Bots.Intents.DefaultIntents.Tests;
@@ -67,19 +68,20 @@ public class DefaultIntentRegistrationTests : BotTestBase
         match.OrchestrationIntentName.ShouldBe("ChitChat");
     }
 
-    [Fact]
-    public async Task BotShouldReplyAppropriatelyToDefaultIntents()
+    [Theory]
+    [InlineData("How are you?", "I'm fine, thanks!")]
+    public async Task BotShouldReplyAppropriatelyToDefaultIntents(string utterance, string expected)
     {
         // Arrange
         TestBot bot = CreateBotWithChitChat();
         bot.AddDefaultIntents();
-        TestTurnContext context = new("How are you?");
+        TestTurnContext turnContext = new(utterance);
 
         // Act
-        await bot.OnTurnAsync(context);
+        await bot.RespondToMessageAsync(turnContext);
 
         // Assert
-        context.ShouldNotBeNull();
+        turnContext.ContainsReply(expected).ShouldBeTrue(turnContext.ToString());
     }
 
     [Fact]

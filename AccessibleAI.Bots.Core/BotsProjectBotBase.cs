@@ -45,15 +45,28 @@ public abstract class BotsProjectBotBase : ActivityHandler
         }
     }
 
-    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
+    protected override async sealed Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken token)
+    {
+        await RespondToMessageAsync(turnContext, token);
+    }
+
+    public virtual async Task<ConversationContext> RespondToMessageAsync(ITurnContext turnContext, CancellationToken token = default)
+    {
+        ConversationContext context = BuildContext(turnContext, token);
+
+        await HandleIntentAsync(context);
+
+        return context;
+    }
+
+    public virtual ConversationContext BuildContext(ITurnContext turnContext, CancellationToken token = default)
     {
         IntentResolutionResult intentResult = MatchIntent(turnContext);
 
-        ConversationContext context = new(turnContext, token, intentResult);
-        await RespondToIntentAsync(context);
+        return new ConversationContext(turnContext, token, intentResult);
     }
 
-    public async virtual Task RespondToIntentAsync(ConversationContext context)
+    public async virtual Task HandleIntentAsync(ConversationContext context)
     {
 
         if (context.IsEmulator)

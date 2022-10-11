@@ -1,5 +1,6 @@
 ﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
+using System.Text;
 
 namespace AccessibleAI.Bots.Testing;
 
@@ -25,6 +26,18 @@ public class TestTurnContext : ITurnContext
     public Activity Activity { get; }
 
     public bool Responded => throw new NotImplementedException();
+
+    public override string ToString()
+    {
+        StringBuilder sb = new();
+
+        foreach (var message in Messages)
+        {
+            sb.AppendLine(message);
+        }
+
+        return sb.ToString();
+    }
 
     public Task DeleteActivityAsync(string activityId, CancellationToken cancellationToken = default)
     {
@@ -72,5 +85,10 @@ public class TestTurnContext : ITurnContext
     public Task<ResourceResponse> UpdateActivityAsync(IActivity activity, CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
+    }
+
+    public bool ContainsReply(string expected)
+    {
+        return Messages.Any(m => m.Contains(expected));
     }
 }
