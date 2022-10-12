@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.13-dev</Version>
+		<Version>0.0.15-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -16,8 +16,18 @@
 		<Company>AccessibleAI.dev</Company>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<PackageTags>Microsoft-Bot-Framework; Conversational-AI; NLP;</PackageTags>
-		<PackageReleaseNotes>Using new core</PackageReleaseNotes>
+		<PackageReleaseNotes>Using new levenshtein</PackageReleaseNotes>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="chitchat.tsv" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="chitchat.tsv">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
 
 	<ItemGroup>
 		<Resource Include="Readme.md">
@@ -35,13 +45,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.15-dev" />
-	  <PackageReference Include="AccessibleAI.Bots.Language.Levenshtein" Version="0.0.7-dev" />
+	  <PackageReference Include="AccessibleAI.Bots.Language.Levenshtein" Version="0.0.8-dev" />
 	</ItemGroup>
-
-  <ItemGroup>
-    <None Update="chitchat.tsv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 
 </Project>

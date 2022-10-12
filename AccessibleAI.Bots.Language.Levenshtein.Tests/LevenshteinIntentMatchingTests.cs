@@ -39,4 +39,20 @@ public class LevenshteinIntentMatchingTests
         result.ConfidenceScore.ShouldBeGreaterThan(0.7, utterance);
         result.OrchestrationIntentName.ShouldBe(OrchestrationName);
     }
+
+    [Fact]
+    public void StringMatchingShouldParseCorrectly()
+    {
+        // Arrange
+        string data = "Do you get hurt?\tBodyQuestion\r\nDo you have fingers?\tBodyQuestion\r\nDo you ever breathe\tBodyQuestion";
+        LevenshteinStringBasedEntityProvider provider = new(data);
+
+        // Act
+        List<LevenshteinEntry> entries = provider.GetEntries().ToList();
+
+        // Assert
+        entries.Count.ShouldBe(3);
+        entries.First().IntentName.ShouldBe("BodyQuestion");
+        entries.First().Text.ShouldBe("Do you get hurt?");
+    }
 }

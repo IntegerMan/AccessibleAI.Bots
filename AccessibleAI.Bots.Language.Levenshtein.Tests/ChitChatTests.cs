@@ -3,6 +3,7 @@
 public class ChitChatTests
 {
 
+    /*
     [Theory]
     [InlineData("Hello!", "Hello")]
     [InlineData("My name is Darth Vader", "None")]
@@ -19,5 +20,6 @@ public class ChitChatTests
         // Assert
         intent.IntentName.ShouldBe(expectedIntent, customMessage: $"{intent.TopIntent?.ConfidenceScore ?? 0:P} - {intent.TopIntent?.MatchDetails}" ?? "No match details");
     }
+    */
 
 }

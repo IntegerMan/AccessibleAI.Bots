@@ -11,8 +11,8 @@ public class LevenshteinStringBasedEntityProvider : ILevenshteinEntityProvider
         Data = data;
     }
 
-    public string[] Delimiters { get; set; } = new[] { "/t" };
-    public bool HasHeaderRow { get; set; } = true;
+    public string[] Delimiters { get; set; } = new[] { "\t" };
+    public bool HasHeaderRow { get; set; } = false;
     public string DefaultOrchestrationName { get; set; } = "None";
     public string DefaultIntentName { get; set; } = "None";
     public string Data { get; }
