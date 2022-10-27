@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.16-dev</Version>
+		<Version>0.0.17-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -45,7 +45,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.16-dev" />
-	  <PackageReference Include="AccessibleAI.Bots.Language.Levenshtein" Version="0.0.8-dev" />
+	  <PackageReference Include="AccessibleAI.Bots.Language.Levenshtein" Version="0.0.16-dev" />
 	</ItemGroup>
 
 </Project>
