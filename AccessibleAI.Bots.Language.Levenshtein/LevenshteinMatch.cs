@@ -26,6 +26,7 @@ public class LevenshteinMatch
         {
             OrchestrationName = Entry.OrchestrationName,
             Category = Entry.IntentName,
+            Entity = Entry.Entity,
             MatchDetails = $"on '{Entry.Text}' with distance {Distance}",
             ConfidenceScore = Math.Max(0.0, confidence) // This will need some tweaking
         };

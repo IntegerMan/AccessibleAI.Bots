@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.8-dev</Version>
+		<Version>0.0.16-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -34,7 +34,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.15-dev" />
+    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.16-dev" />
     <PackageReference Include="Quickenshtein" Version="1.5.1" />
   </ItemGroup>
 

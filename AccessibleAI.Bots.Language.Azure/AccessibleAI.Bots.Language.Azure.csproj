@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Matt Eland</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>0.0.18-dev</Version>
+		<Version>0.0.19-dev</Version>
 		<RepositoryUrl>https://github.com/IntegerMan/AccessibleAI.Bots</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>AccessibleAI.png</PackageIcon>
@@ -34,7 +34,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.15-dev" />
+    <PackageReference Include="AccessibleAI.Bots.Core" Version="0.0.16-dev" />
     <PackageReference Include="Azure.AI.Language.Conversations" Version="1.0.0" />
     <PackageReference Include="Microsoft.Bot.Builder" Version="4.17.2" />
   </ItemGroup>

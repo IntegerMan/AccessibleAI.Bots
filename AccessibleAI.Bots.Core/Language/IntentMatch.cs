@@ -16,6 +16,7 @@ public class IntentMatch
 
     public string? OrchestrationName { get; set; }
     public string Category { get; set; } = null!;
+    public string? Entity { get; set; } = null;
     public double ConfidenceScore { get; set; }
 
     public string? MatchDetails { get; set; }

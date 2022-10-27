@@ -120,10 +120,6 @@ public abstract class BotsProjectBotBase : ActivityHandler
             result.Intents.Where(i => i != result.TopIntent).Take(maxOtherIntents).ToList().ForEach(i =>
             {
                 sb.AppendLine($"- {i}");
-                if (!string.IsNullOrWhiteSpace(i.MatchDetails))
-                {
-                    sb.AppendLine($"    - {i}");
-                }
             });
         }
 

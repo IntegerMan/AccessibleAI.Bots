@@ -14,9 +14,10 @@ namespace AccessibleAI.Bots.Language.Levenshtein
         public string Text { get; }
         public string IntentName { get; }
         public string OrchestrationName { get; }
+        public string? Entity { get; set; }
 
         public LevenshteinMatch CreateMatch(int distance, string utterance)
-            => new LevenshteinMatch(this, distance, utterance);
+            => new(this, distance, utterance);
 
         public override bool Equals(object? obj)
         {
