@@ -1,5 +1,6 @@
 ﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
+using Shouldly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,17 @@ public class TestTurnContext : ITurnContext
     public TestTurnContext(string userMessage)
     {
         Activity = new Activity(text: userMessage);
+    }
+
+    public void ShouldContain(string message)
+    {
+        StringBuilder sb = new();
+        foreach (string m in Messages)
+        {
+            sb.AppendLine(m);
+        }
+
+        Messages.ShouldContain(m => m.Contains(message, StringComparison.InvariantCultureIgnoreCase), sb.ToString());
     }
 
     public IEnumerable<string> Messages => Activities.Select(a => a.Text).Where(m => m != null);
